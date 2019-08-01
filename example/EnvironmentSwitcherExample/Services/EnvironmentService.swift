@@ -34,7 +34,6 @@ class EnvironmentService: EnvironmentSwitcherDelegate {
     private func configFor(_ app: MainWindowContaner?) {
 
         let config = ServersListConfigurator(servers: serversList, current: currentServer, shouldSelectOnStart: true)
-        let config2 = Serv
         
         let application = app ?? (UIApplication.shared)
         switcher = EnvironmentSwitcher(config, app: application)
