@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MainTabController: UIViewController, EvironmentListener {
+class MainTabController: UIViewController, EnvironmentListener {
 
-    @IBOutlet private weak var serverNameLabel: UILabel?
+    @IBOutlet private var serverNameLabel: UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +25,15 @@ class MainTabController: UIViewController, EvironmentListener {
         NotificationCenter.default.addObserver(self, selector: #selector(getNewServerName), name: .serverChanged, object: nil)
     }
     
-    func shouldChangeServer(newServer: String) {
-        print("MainTabController should change")
+    func shouldChangeServerTo(_ newServer: String) {
+        serverNameLabel?.text = newServer
     }
     
-    @objc private func getNewServerName(_ notification: Notification) {
-        guard let newDomain = notification.userInfo?[Notification.Name.serverChanged] as? String else {
-            serverNameLabel?.text = "Не удалось получить новый адрес сервера"
+    @objc func getNewServerName(_ notification: Notification) {
+        guard let newDomain = fetchDomainFromNotification(notification) else {
             return
         }
-        serverNameLabel?.text = newDomain
+        shouldChangeServerTo(newDomain)
     }
     
 }
-

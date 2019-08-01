@@ -6,9 +6,9 @@
 //  Copyright © 2019 AERO. All rights reserved.
 //
 
-import XCTest
-import EnvironmentSwitcher
+@testable import EnvironmentSwitcher
 @testable import EnvironmentSwitcherExample
+import XCTest
 
 extension XCUIApplication: MainWindowContaner {
     public var mainWindow: UIWindow? {

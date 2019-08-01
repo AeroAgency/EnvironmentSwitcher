@@ -6,9 +6,9 @@
 //  Copyright © 2019 AERO. All rights reserved.
 //
 
-import XCTest
-import EnvironmentSwitcher
+@testable import EnvironmentSwitcher
 @testable import EnvironmentSwitcherExample
+import XCTest
 
 private let kDomainsList = ["http://test.domain.com/", "https://subtest.test.domain.com/", "https://domain.com/"]
 private let kDefaultDomain = "https://subtest.test.domain.com/"
@@ -25,7 +25,7 @@ class EnvironmentSwitcherExampleTests: XCTestCase {
 
     func testSelectServerBeforeOpenApp() {
         let configurator = ServersListConfigurator(servers: kDomainsList, current: kDefaultDomain, shouldSelectOnStart: true)
-        let _ = EnvironmentSwitcher(configurator)
+        _ = EnvironmentSwitcher(configurator)
         
         let rootVc = UIApplication.shared.keyWindow?.rootViewController
         XCTAssertNotNil(rootVc, "root controller is nil")
