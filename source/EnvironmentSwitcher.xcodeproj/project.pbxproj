@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		793E341A22BCC4F600F6BAA3 /* AppStartRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797153C422BBA49400E1B11D /* AppStartRootController.swift */; };
+		797153BE22BA5F2500E1B11D /* ServersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B822982BE9006409D3 /* ServersListConfigurator.swift */; };
+		797153BF22BA5F3700E1B11D /* EnvironmentSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B522982607006409D3 /* EnvironmentSwitcher.swift */; };
+		797153C022BA5FA200E1B11D /* UIViewController+fromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024DB22AFC8F500B3C683 /* UIViewController+fromNib.swift */; };
+		797153C122BA5FAA00E1B11D /* SwitcherServerSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D322AFA8EB00B3C683 /* SwitcherServerSelectController.swift */; };
+		797153C222BA5FAD00E1B11D /* SwitcherServerSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F024D422AFA8EB00B3C683 /* SwitcherServerSelectController.xib */; };
+		797153C622BBA49400E1B11D /* AppStartRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797153C422BBA49400E1B11D /* AppStartRootController.swift */; };
+		797153C722BBA49400E1B11D /* AppStartRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797153C522BBA49400E1B11D /* AppStartRootController.xib */; };
+		7989601722B90E3F00182BED /* SwitcherWindowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989601622B90E3F00182BED /* SwitcherWindowService.swift */; };
+		79A5208822980002006409D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5208722980002006409D3 /* AppDelegate.swift */; };
+		79A5208F22980004006409D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A5208E22980004006409D3 /* Assets.xcassets */; };
+		79A5209D22980004006409D3 /* EnvironmentSwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5209C22980004006409D3 /* EnvironmentSwitcherTests.swift */; };
+		79A520A822980004006409D3 /* EnvironmentSwitcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520A722980004006409D3 /* EnvironmentSwitcherUITests.swift */; };
+		79A520B622982607006409D3 /* EnvironmentSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B522982607006409D3 /* EnvironmentSwitcher.swift */; };
+		79A520B922982BE9006409D3 /* ServersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B822982BE9006409D3 /* ServersListConfigurator.swift */; };
+		79AF0D9422BA1E5900059B10 /* SwitcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D822AFC11400B3C683 /* SwitcherService.swift */; };
+		79AF0D9522BA1E5E00059B10 /* SwitcherWindowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989601622B90E3F00182BED /* SwitcherWindowService.swift */; };
+		79CA640622B7A13E00769B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640522B7A13E00769B5E /* Foundation.framework */; };
+		79CA640722B7A14800769B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640522B7A13E00769B5E /* Foundation.framework */; };
+		79CA640922B7A2EA00769B5E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640822B7A2EA00769B5E /* CoreMedia.framework */; };
+		79CA640A22B7A2F800769B5E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640822B7A2EA00769B5E /* CoreMedia.framework */; };
+		79F024D522AFA8EB00B3C683 /* SwitcherServerSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D322AFA8EB00B3C683 /* SwitcherServerSelectController.swift */; };
+		79F024D622AFA8EB00B3C683 /* SwitcherServerSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F024D422AFA8EB00B3C683 /* SwitcherServerSelectController.xib */; };
+		79F024D922AFC11400B3C683 /* SwitcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D822AFC11400B3C683 /* SwitcherService.swift */; };
+		79F024DC22AFC8F500B3C683 /* UIViewController+fromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024DB22AFC8F500B3C683 /* UIViewController+fromNib.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79A5209922980004006409D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79A5207C22980002006409D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79A5208322980002006409D3;
+			remoteInfo = EnvironmentSwitcher;
+		};
+		79A520A422980004006409D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79A5207C22980002006409D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79A5208322980002006409D3;
+			remoteInfo = EnvironmentSwitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		797153C422BBA49400E1B11D /* AppStartRootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartRootController.swift; sourceTree = "<group>"; };
+		797153C522BBA49400E1B11D /* AppStartRootController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppStartRootController.xib; sourceTree = "<group>"; };
+		7989601622B90E3F00182BED /* SwitcherWindowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherWindowService.swift; sourceTree = "<group>"; };
+		79A5208422980002006409D3 /* EnvironmentSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A5208722980002006409D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79A5208E22980004006409D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79A5209322980004006409D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A5209822980004006409D3 /* EnvironmentSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A5209C22980004006409D3 /* EnvironmentSwitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcherTests.swift; sourceTree = "<group>"; };
+		79A5209E22980004006409D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A520A322980004006409D3 /* EnvironmentSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A520A722980004006409D3 /* EnvironmentSwitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcherUITests.swift; sourceTree = "<group>"; };
+		79A520A922980004006409D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A520B522982607006409D3 /* EnvironmentSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcher.swift; sourceTree = "<group>"; };
+		79A520B822982BE9006409D3 /* ServersListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersListConfigurator.swift; sourceTree = "<group>"; };
+		79CA640522B7A13E00769B5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79CA640822B7A2EA00769B5E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		79F024D322AFA8EB00B3C683 /* SwitcherServerSelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherServerSelectController.swift; sourceTree = "<group>"; };
+		79F024D422AFA8EB00B3C683 /* SwitcherServerSelectController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitcherServerSelectController.xib; sourceTree = "<group>"; };
+		79F024D822AFC11400B3C683 /* SwitcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherService.swift; sourceTree = "<group>"; };
+		79F024DB22AFC8F500B3C683 /* UIViewController+fromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+fromNib.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79A5208122980002006409D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A5209522980004006409D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CA640922B7A2EA00769B5E /* CoreMedia.framework in Frameworks */,
+				79CA640622B7A13E00769B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A520A022980004006409D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CA640A22B7A2F800769B5E /* CoreMedia.framework in Frameworks */,
+				79CA640722B7A14800769B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797153C322BBA37400E1B11D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79F024D322AFA8EB00B3C683 /* SwitcherServerSelectController.swift */,
+				79F024D422AFA8EB00B3C683 /* SwitcherServerSelectController.xib */,
+				797153C422BBA49400E1B11D /* AppStartRootController.swift */,
+				797153C522BBA49400E1B11D /* AppStartRootController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79A5207B22980002006409D3 = {
+			isa = PBXGroup;
+			children = (
+				79A5208622980002006409D3 /* EnvironmentSwitcher */,
+				79A5209B22980004006409D3 /* EnvironmentSwitcherTests */,
+				79A520A622980004006409D3 /* EnvironmentSwitcherUITests */,
+				79A5208522980002006409D3 /* Products */,
+				79CA640422B7A13E00769B5E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79A5208522980002006409D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79A5208422980002006409D3 /* EnvironmentSwitcher.app */,
+				79A5209822980004006409D3 /* EnvironmentSwitcherTests.xctest */,
+				79A520A322980004006409D3 /* EnvironmentSwitcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79A5208622980002006409D3 /* EnvironmentSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				797153C322BBA37400E1B11D /* ViewControllers */,
+				79F024DA22AFC8DF00B3C683 /* Helpers */,
+				79F024D722AFC0F400B3C683 /* Services */,
+				79A520B72298296B006409D3 /* Models */,
+				79A5208722980002006409D3 /* AppDelegate.swift */,
+				79A5208E22980004006409D3 /* Assets.xcassets */,
+				79A5209322980004006409D3 /* Info.plist */,
+			);
+			path = EnvironmentSwitcher;
+			sourceTree = "<group>";
+		};
+		79A5209B22980004006409D3 /* EnvironmentSwitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				79A5209C22980004006409D3 /* EnvironmentSwitcherTests.swift */,
+				79A5209E22980004006409D3 /* Info.plist */,
+			);
+			path = EnvironmentSwitcherTests;
+			sourceTree = "<group>";
+		};
+		79A520A622980004006409D3 /* EnvironmentSwitcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79A520A722980004006409D3 /* EnvironmentSwitcherUITests.swift */,
+				79A520A922980004006409D3 /* Info.plist */,
+			);
+			path = EnvironmentSwitcherUITests;
+			sourceTree = "<group>";
+		};
+		79A520B72298296B006409D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79A520B522982607006409D3 /* EnvironmentSwitcher.swift */,
+				79A520B822982BE9006409D3 /* ServersListConfigurator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79CA640422B7A13E00769B5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79CA640822B7A2EA00769B5E /* CoreMedia.framework */,
+				79CA640522B7A13E00769B5E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79F024D722AFC0F400B3C683 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79F024D822AFC11400B3C683 /* SwitcherService.swift */,
+				7989601622B90E3F00182BED /* SwitcherWindowService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79F024DA22AFC8DF00B3C683 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				79F024DB22AFC8F500B3C683 /* UIViewController+fromNib.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79A5208322980002006409D3 /* EnvironmentSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A520AC22980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcher" */;
+			buildPhases = (
+				79A5208022980002006409D3 /* Sources */,
+				79A5208122980002006409D3 /* Frameworks */,
+				79A5208222980002006409D3 /* Resources */,
+				79A8839122B264C700195D9E /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnvironmentSwitcher;
+			productName = EnvironmentSwitcher;
+			productReference = 79A5208422980002006409D3 /* EnvironmentSwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79A5209722980004006409D3 /* EnvironmentSwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A520AF22980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcherTests" */;
+			buildPhases = (
+				79A5209422980004006409D3 /* Sources */,
+				79A5209522980004006409D3 /* Frameworks */,
+				79A5209622980004006409D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79A5209A22980004006409D3 /* PBXTargetDependency */,
+			);
+			name = EnvironmentSwitcherTests;
+			productName = EnvironmentSwitcherTests;
+			productReference = 79A5209822980004006409D3 /* EnvironmentSwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79A520A222980004006409D3 /* EnvironmentSwitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A520B222980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcherUITests" */;
+			buildPhases = (
+				79A5209F22980004006409D3 /* Sources */,
+				79A520A022980004006409D3 /* Frameworks */,
+				79A520A122980004006409D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79A520A522980004006409D3 /* PBXTargetDependency */,
+			);
+			name = EnvironmentSwitcherUITests;
+			productName = EnvironmentSwitcherUITests;
+			productReference = 79A520A322980004006409D3 /* EnvironmentSwitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79A5207C22980002006409D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = AERO;
+				TargetAttributes = {
+					79A5208322980002006409D3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					79A5209722980004006409D3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 79A5208322980002006409D3;
+					};
+					79A520A222980004006409D3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 79A5208322980002006409D3;
+					};
+				};
+			};
+			buildConfigurationList = 79A5207F22980002006409D3 /* Build configuration list for PBXProject "EnvironmentSwitcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79A5207B22980002006409D3;
+			productRefGroup = 79A5208522980002006409D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79A5208322980002006409D3 /* EnvironmentSwitcher */,
+				79A5209722980004006409D3 /* EnvironmentSwitcherTests */,
+				79A520A222980004006409D3 /* EnvironmentSwitcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79A5208222980002006409D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A5208F22980004006409D3 /* Assets.xcassets in Resources */,
+				79F024D622AFA8EB00B3C683 /* SwitcherServerSelectController.xib in Resources */,
+				797153C722BBA49400E1B11D /* AppStartRootController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A5209622980004006409D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797153C222BA5FAD00E1B11D /* SwitcherServerSelectController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A520A122980004006409D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79A8839122B264C700195D9E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint --config .swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79A5208022980002006409D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A520B622982607006409D3 /* EnvironmentSwitcher.swift in Sources */,
+				79F024DC22AFC8F500B3C683 /* UIViewController+fromNib.swift in Sources */,
+				79F024D922AFC11400B3C683 /* SwitcherService.swift in Sources */,
+				7989601722B90E3F00182BED /* SwitcherWindowService.swift in Sources */,
+				79F024D522AFA8EB00B3C683 /* SwitcherServerSelectController.swift in Sources */,
+				79A520B922982BE9006409D3 /* ServersListConfigurator.swift in Sources */,
+				797153C622BBA49400E1B11D /* AppStartRootController.swift in Sources */,
+				79A5208822980002006409D3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A5209422980004006409D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AF0D9422BA1E5900059B10 /* SwitcherService.swift in Sources */,
+				797153BF22BA5F3700E1B11D /* EnvironmentSwitcher.swift in Sources */,
+				797153C022BA5FA200E1B11D /* UIViewController+fromNib.swift in Sources */,
+				797153BE22BA5F2500E1B11D /* ServersListConfigurator.swift in Sources */,
+				797153C122BA5FAA00E1B11D /* SwitcherServerSelectController.swift in Sources */,
+				79A5209D22980004006409D3 /* EnvironmentSwitcherTests.swift in Sources */,
+				793E341A22BCC4F600F6BAA3 /* AppStartRootController.swift in Sources */,
+				79AF0D9522BA1E5E00059B10 /* SwitcherWindowService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A5209F22980004006409D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A520A822980004006409D3 /* EnvironmentSwitcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79A5209A22980004006409D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79A5208322980002006409D3 /* EnvironmentSwitcher */;
+			targetProxy = 79A5209922980004006409D3 /* PBXContainerItemProxy */;
+		};
+		79A520A522980004006409D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79A5208322980002006409D3 /* EnvironmentSwitcher */;
+			targetProxy = 79A520A422980004006409D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79A520AA22980004006409D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79A520AB22980004006409D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79A520AD22980004006409D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74D89J266R;
+				INFOPLIST_FILE = EnvironmentSwitcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		79A520AE22980004006409D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74D89J266R;
+				INFOPLIST_FILE = EnvironmentSwitcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		79A520B022980004006409D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74D89J266R;
+				INFOPLIST_FILE = EnvironmentSwitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnvironmentSwitcher.app/EnvironmentSwitcher";
+			};
+			name = Debug;
+		};
+		79A520B122980004006409D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74D89J266R;
+				INFOPLIST_FILE = EnvironmentSwitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnvironmentSwitcher.app/EnvironmentSwitcher";
+			};
+			name = Release;
+		};
+		79A520B322980004006409D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74D89J266R;
+				INFOPLIST_FILE = EnvironmentSwitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnvironmentSwitcher;
+			};
+			name = Debug;
+		};
+		79A520B422980004006409D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74D89J266R;
+				INFOPLIST_FILE = EnvironmentSwitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnvironmentSwitcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79A5207F22980002006409D3 /* Build configuration list for PBXProject "EnvironmentSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A520AA22980004006409D3 /* Debug */,
+				79A520AB22980004006409D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A520AC22980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A520AD22980004006409D3 /* Debug */,
+				79A520AE22980004006409D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A520AF22980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A520B022980004006409D3 /* Debug */,
+				79A520B122980004006409D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A520B222980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A520B322980004006409D3 /* Debug */,
+				79A520B422980004006409D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79A5207C22980002006409D3 /* Project object */;
+}

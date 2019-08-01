@@ -1,0 +1,16 @@
+{
+  "name": "EnvironmentSwitcher",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "authors": "Stas Telnov",
+  "summary": "Переключатель окружения",
+  "version": "1.0",
+  "homepage": "https://aeroidea.ru/",
+  "source": {
+    "path": "source/"
+  },
+  "source_files": "source/**/*.swift",
+  "resources": "source/**/*.{xcassets,xib}",
+  "exclude_files": "source/**/*Tests.*"
+}
