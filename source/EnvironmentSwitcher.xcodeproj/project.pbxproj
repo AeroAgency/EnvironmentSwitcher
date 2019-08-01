@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7928B5EB22F2F08C00274A55 /* UIImage+colored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928B5EA22F2F08C00274A55 /* UIImage+colored.swift */; };
 		793E341A22BCC4F600F6BAA3 /* AppStartRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797153C422BBA49400E1B11D /* AppStartRootController.swift */; };
 		797153BE22BA5F2500E1B11D /* ServersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B822982BE9006409D3 /* ServersListConfigurator.swift */; };
 		797153BF22BA5F3700E1B11D /* EnvironmentSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B522982607006409D3 /* EnvironmentSwitcher.swift */; };
-		797153C022BA5FA200E1B11D /* UIViewController+fromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024DB22AFC8F500B3C683 /* UIViewController+fromNib.swift */; };
 		797153C122BA5FAA00E1B11D /* SwitcherServerSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D322AFA8EB00B3C683 /* SwitcherServerSelectController.swift */; };
 		797153C222BA5FAD00E1B11D /* SwitcherServerSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F024D422AFA8EB00B3C683 /* SwitcherServerSelectController.xib */; };
 		797153C622BBA49400E1B11D /* AppStartRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797153C422BBA49400E1B11D /* AppStartRootController.swift */; };
@@ -19,15 +19,12 @@
 		79A5208822980002006409D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5208722980002006409D3 /* AppDelegate.swift */; };
 		79A5208F22980004006409D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A5208E22980004006409D3 /* Assets.xcassets */; };
 		79A5209D22980004006409D3 /* EnvironmentSwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5209C22980004006409D3 /* EnvironmentSwitcherTests.swift */; };
-		79A520A822980004006409D3 /* EnvironmentSwitcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520A722980004006409D3 /* EnvironmentSwitcherUITests.swift */; };
 		79A520B622982607006409D3 /* EnvironmentSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B522982607006409D3 /* EnvironmentSwitcher.swift */; };
 		79A520B922982BE9006409D3 /* ServersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A520B822982BE9006409D3 /* ServersListConfigurator.swift */; };
 		79AF0D9422BA1E5900059B10 /* SwitcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D822AFC11400B3C683 /* SwitcherService.swift */; };
 		79AF0D9522BA1E5E00059B10 /* SwitcherWindowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989601622B90E3F00182BED /* SwitcherWindowService.swift */; };
 		79CA640622B7A13E00769B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640522B7A13E00769B5E /* Foundation.framework */; };
-		79CA640722B7A14800769B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640522B7A13E00769B5E /* Foundation.framework */; };
 		79CA640922B7A2EA00769B5E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640822B7A2EA00769B5E /* CoreMedia.framework */; };
-		79CA640A22B7A2F800769B5E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CA640822B7A2EA00769B5E /* CoreMedia.framework */; };
 		79F024D522AFA8EB00B3C683 /* SwitcherServerSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D322AFA8EB00B3C683 /* SwitcherServerSelectController.swift */; };
 		79F024D622AFA8EB00B3C683 /* SwitcherServerSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F024D422AFA8EB00B3C683 /* SwitcherServerSelectController.xib */; };
 		79F024D922AFC11400B3C683 /* SwitcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F024D822AFC11400B3C683 /* SwitcherService.swift */; };
@@ -42,16 +39,10 @@
 			remoteGlobalIDString = 79A5208322980002006409D3;
 			remoteInfo = EnvironmentSwitcher;
 		};
-		79A520A422980004006409D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79A5207C22980002006409D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79A5208322980002006409D3;
-			remoteInfo = EnvironmentSwitcher;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7928B5EA22F2F08C00274A55 /* UIImage+colored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+colored.swift"; sourceTree = "<group>"; };
 		797153C422BBA49400E1B11D /* AppStartRootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartRootController.swift; sourceTree = "<group>"; };
 		797153C522BBA49400E1B11D /* AppStartRootController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppStartRootController.xib; sourceTree = "<group>"; };
 		7989601622B90E3F00182BED /* SwitcherWindowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherWindowService.swift; sourceTree = "<group>"; };
@@ -62,9 +53,6 @@
 		79A5209822980004006409D3 /* EnvironmentSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A5209C22980004006409D3 /* EnvironmentSwitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcherTests.swift; sourceTree = "<group>"; };
 		79A5209E22980004006409D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79A520A322980004006409D3 /* EnvironmentSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79A520A722980004006409D3 /* EnvironmentSwitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcherUITests.swift; sourceTree = "<group>"; };
-		79A520A922980004006409D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79A520B522982607006409D3 /* EnvironmentSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcher.swift; sourceTree = "<group>"; };
 		79A520B822982BE9006409D3 /* ServersListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersListConfigurator.swift; sourceTree = "<group>"; };
 		79CA640522B7A13E00769B5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,15 +80,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79A520A022980004006409D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79CA640A22B7A2F800769B5E /* CoreMedia.framework in Frameworks */,
-				79CA640722B7A14800769B5E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,7 +99,6 @@
 			children = (
 				79A5208622980002006409D3 /* EnvironmentSwitcher */,
 				79A5209B22980004006409D3 /* EnvironmentSwitcherTests */,
-				79A520A622980004006409D3 /* EnvironmentSwitcherUITests */,
 				79A5208522980002006409D3 /* Products */,
 				79CA640422B7A13E00769B5E /* Frameworks */,
 			);
@@ -131,7 +109,6 @@
 			children = (
 				79A5208422980002006409D3 /* EnvironmentSwitcher.app */,
 				79A5209822980004006409D3 /* EnvironmentSwitcherTests.xctest */,
-				79A520A322980004006409D3 /* EnvironmentSwitcherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,15 +134,6 @@
 				79A5209E22980004006409D3 /* Info.plist */,
 			);
 			path = EnvironmentSwitcherTests;
-			sourceTree = "<group>";
-		};
-		79A520A622980004006409D3 /* EnvironmentSwitcherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				79A520A722980004006409D3 /* EnvironmentSwitcherUITests.swift */,
-				79A520A922980004006409D3 /* Info.plist */,
-			);
-			path = EnvironmentSwitcherUITests;
 			sourceTree = "<group>";
 		};
 		79A520B72298296B006409D3 /* Models */ = {
@@ -199,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				79F024DB22AFC8F500B3C683 /* UIViewController+fromNib.swift */,
+				7928B5EA22F2F08C00274A55 /* UIImage+colored.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -242,24 +211,6 @@
 			productReference = 79A5209822980004006409D3 /* EnvironmentSwitcherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		79A520A222980004006409D3 /* EnvironmentSwitcherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79A520B222980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcherUITests" */;
-			buildPhases = (
-				79A5209F22980004006409D3 /* Sources */,
-				79A520A022980004006409D3 /* Frameworks */,
-				79A520A122980004006409D3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79A520A522980004006409D3 /* PBXTargetDependency */,
-			);
-			name = EnvironmentSwitcherUITests;
-			productName = EnvironmentSwitcherUITests;
-			productReference = 79A520A322980004006409D3 /* EnvironmentSwitcherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -274,10 +225,6 @@
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					79A5209722980004006409D3 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 79A5208322980002006409D3;
-					};
-					79A520A222980004006409D3 = {
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = 79A5208322980002006409D3;
 					};
@@ -298,7 +245,6 @@
 			targets = (
 				79A5208322980002006409D3 /* EnvironmentSwitcher */,
 				79A5209722980004006409D3 /* EnvironmentSwitcherTests */,
-				79A520A222980004006409D3 /* EnvironmentSwitcherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,13 +265,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				797153C222BA5FAD00E1B11D /* SwitcherServerSelectController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79A520A122980004006409D3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A520B622982607006409D3 /* EnvironmentSwitcher.swift in Sources */,
+				7928B5EB22F2F08C00274A55 /* UIImage+colored.swift in Sources */,
 				79F024DC22AFC8F500B3C683 /* UIViewController+fromNib.swift in Sources */,
 				79F024D922AFC11400B3C683 /* SwitcherService.swift in Sources */,
 				7989601722B90E3F00182BED /* SwitcherWindowService.swift in Sources */,
@@ -374,20 +314,11 @@
 			files = (
 				79AF0D9422BA1E5900059B10 /* SwitcherService.swift in Sources */,
 				797153BF22BA5F3700E1B11D /* EnvironmentSwitcher.swift in Sources */,
-				797153C022BA5FA200E1B11D /* UIViewController+fromNib.swift in Sources */,
 				797153BE22BA5F2500E1B11D /* ServersListConfigurator.swift in Sources */,
 				797153C122BA5FAA00E1B11D /* SwitcherServerSelectController.swift in Sources */,
 				79A5209D22980004006409D3 /* EnvironmentSwitcherTests.swift in Sources */,
 				793E341A22BCC4F600F6BAA3 /* AppStartRootController.swift in Sources */,
 				79AF0D9522BA1E5E00059B10 /* SwitcherWindowService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79A5209F22980004006409D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79A520A822980004006409D3 /* EnvironmentSwitcherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,11 +329,6 @@
 			isa = PBXTargetDependency;
 			target = 79A5208322980002006409D3 /* EnvironmentSwitcher */;
 			targetProxy = 79A5209922980004006409D3 /* PBXContainerItemProxy */;
-		};
-		79A520A522980004006409D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79A5208322980002006409D3 /* EnvironmentSwitcher */;
-			targetProxy = 79A520A422980004006409D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -605,46 +531,6 @@
 			};
 			name = Release;
 		};
-		79A520B322980004006409D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 74D89J266R;
-				INFOPLIST_FILE = EnvironmentSwitcherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EnvironmentSwitcher;
-			};
-			name = Debug;
-		};
-		79A520B422980004006409D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 74D89J266R;
-				INFOPLIST_FILE = EnvironmentSwitcherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = internal.aero.EnvironmentSwitcherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EnvironmentSwitcher;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -671,15 +557,6 @@
 			buildConfigurations = (
 				79A520B022980004006409D3 /* Debug */,
 				79A520B122980004006409D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79A520B222980004006409D3 /* Build configuration list for PBXNativeTarget "EnvironmentSwitcherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79A520B322980004006409D3 /* Debug */,
-				79A520B422980004006409D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

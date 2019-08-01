@@ -8,9 +8,14 @@
 
 import UIKit
 
-extension UIViewController {
+/// Wapper for load view controller from xib file
+public extension UIViewController {
+    
+    /// Load view controller from xib file
+    /// - Returns: view controller object from Nib in current Bundle
     static func fromNib() -> Self {
         let bundle = Bundle(for: self)
         return self.init(nibName: String(describing: self.self), bundle: bundle)
     }
+    
 }

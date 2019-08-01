@@ -32,10 +32,13 @@ private enum SwitcherIconRects {
 }
 
 
-// MARK: - UIWindowContainerProtocol
-/// protocol for application
+// MARK: - container of UIWindow protocol and UIApplication extension
+/// Protocol for main window container. Swither will displayed over main window and
+/// replased main window on application start of this container.
+/// -
+/// By default using UIApplication with keyWindow or
 public protocol MainWindowContaner {
-    /// returns currant applicatuin keyWindow or last window
+    /// Main window of apllication
     var mainWindow: UIWindow? { get }
 }
 
@@ -48,10 +51,11 @@ extension UIApplication: MainWindowContaner {
     }
 }
 
+
 // MARK: - service
 class SwitcherWindowService {
-    // MARK: variables
     
+    // MARK: variables
     private static let shared = SwitcherWindowService()
     private var application = UIApplication.shared as MainWindowContaner
     private var mainWindowRootVc: UIViewController?
@@ -87,7 +91,7 @@ class SwitcherWindowService {
         return imgView
     }()
     
-    private lazy var toggleIconView: UIView = {
+    private lazy var showingIconView: UIView = {
         let view = UIView()
         view.frame = iconFrame()
         view.backgroundColor = .clear
@@ -114,10 +118,10 @@ class SwitcherWindowService {
     private func attachToApp(_ app: MainWindowContaner) {
         application = app
         
-        toggleIconView.removeFromSuperview()
+        showingIconView.removeFromSuperview()
         iconView.removeFromSuperview()
         
-        mainWindow.addSubview(toggleIconView)
+        mainWindow.addSubview(showingIconView)
         mainWindow.addSubview(iconView)
         
         addDoubleTap()
@@ -128,7 +132,7 @@ class SwitcherWindowService {
         toggleIcon(true)
     }
     
-    // MARK: - selection manipulation
+    // MARK: selection manipulation
     func dispaySelectOnAppStartIfNeeded(_ isNeeded: Bool, currentServer: String) {
         guard isNeeded else {
             return
@@ -141,8 +145,8 @@ class SwitcherWindowService {
         environmentSwitcherWindow.isHidden = false
     }
     
-    // MARK: - timer
-    /// TODO: this is hack for moving to front every 3 seconds. Should find other solution
+    // MARK: timer
+    /// TODO: this is hack for moving to front every 3 seconds. Should find other solution, without timer and sometimes moving window to front
     private func initTimer() {
         guard checkSubviewsFrontTimer == nil else {
             return
@@ -152,6 +156,7 @@ class SwitcherWindowService {
             self.moveIconsToFront()
         })
     }
+    
     
     // MARK: window manipulation
     func toggleSelectServerVc() {
@@ -167,10 +172,11 @@ class SwitcherWindowService {
         moveIconsToFront()
     }
 
+    
     // MARK: icon manipulation
     func updatePositionIfNeeeded() {
         iconView.frame = iconFrame()
-        toggleIconView.frame = iconFrame()
+        showingIconView.frame = iconFrame()
     }
     
     private func iconFrame() -> CGRect {
@@ -194,10 +200,11 @@ class SwitcherWindowService {
     }
     
     private func moveIconsToFront() {
-        mainWindow.bringSubviewToFront(toggleIconView)
+        mainWindow.bringSubviewToFront(showingIconView)
         mainWindow.bringSubviewToFront(iconView)
     }
 }
+
 
 // MARK: - taps manipulation extension
 private extension SwitcherWindowService {
@@ -207,9 +214,9 @@ private extension SwitcherWindowService {
         return gesture
     }
     
-    // MARK: - add taps
+    // MARK: add taps
     private func addDoubleTap() {
-        toggleIconView.addGestureRecognizer(doubleTapGesureRecognize())
+        showingIconView.addGestureRecognizer(doubleTapGesureRecognize())
         iconView.addGestureRecognizer(doubleTapGesureRecognize())
     }
     

@@ -46,7 +46,7 @@ class SwitcherService: SwitcherServiceInterface {
         NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
         
         guard let vc = windowService.environmentSwitcherWindow.rootViewController as? SwitcherServerSelectController else {
-            fatalError("Switch selection controller not found")
+            fatalError("Select server view controller dont found")
         }
         
         vc.delegate = self
@@ -73,7 +73,7 @@ class SwitcherService: SwitcherServiceInterface {
     }
 }
 
-// MARK: - data source and delegate extensions
+// MARK: - servers list data source
 extension SwitcherService: ServersDataSource {
     var current: String {
         return configurator.currentServer
@@ -83,6 +83,7 @@ extension SwitcherService: ServersDataSource {
     }
 }
 
+// MARK: - swither delegate
 extension SwitcherService: PickerServersDelegate {
     func cancelSwitch() {
         toggleSelectServerVc()

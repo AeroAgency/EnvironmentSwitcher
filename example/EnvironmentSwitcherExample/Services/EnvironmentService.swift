@@ -28,14 +28,13 @@ class EnvironmentService: EnvironmentSwitcherDelegate {
             let _ = appInstance.mainWindow
             shared.configFor(appInstance)
         }
-//        print("shared is \(shared.self)")
-//        print("shared is \(String(describing: shared))")
         return shared
     }
     
     private func configFor(_ app: MainWindowContaner?) {
 
         let config = ServersListConfigurator(servers: serversList, current: currentServer, shouldSelectOnStart: true)
+        let config2 = Serv
         
         let application = app ?? (UIApplication.shared)
         switcher = EnvironmentSwitcher(config, app: application)

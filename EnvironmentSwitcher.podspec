@@ -1,18 +1,20 @@
 Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
+  	s.version = '0.9.0'
     s.name = 'EnvironmentSwitcher'
-    s.authors = 'Stas Telnov'
-    s.summary = 'Переключатель окружения'
-    s.version = '1.0'
-    s.homepage = 'https://aeroidea.ru/'
+    s.summary = 'Switch REST environments on the fly.'
+    s.description = 'Switch servers and HTTP endpoints on the fly and before starting the application.'
+    
+  	s.swift_versions = ['5.0']
+  	s.cocoapods_version = '>= 1.7.0'  
+    
+  	s.license = { :type => 'MIT', :file => 'LICENSE.md' }
+    s.authors = { 'Stas Telnov' => 'telnov@aeroidea.ru' }
+    s.homepage = 'https://github.com/StasanTelnov/EnvironmentSwither'
+    
     s.source = { :path => 'source/' }
     s.source_files = 'source/**/*.swift'
     s.resources = "source/**/*.{xcassets,xib}"
     
     s.exclude_files = 'source/**/*Tests.*'
-
-#     s.weak_framework = "XCTest"
-#     s.pod_target_xcconfig = {
-#       'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"',
-#     }
 end

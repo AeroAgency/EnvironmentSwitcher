@@ -9,7 +9,6 @@
 import UIKit
 
 /// Server change protocol. Say for external observers, when server was changed
-/// How it works - see example folder
 public protocol EnvironmentSwitcherDelegate: class {
     func serverDidChanged(_ newServer: String)
 }
@@ -21,30 +20,29 @@ public class EnvironmentSwitcher {
     static var icon: UIImage {
         let bundle = Bundle(for: self)
         guard let img = UIImage(named: "domain", in: bundle, compatibleWith: nil) else {
-//            fatalError("Image icon not found!")
-            print("domain img dont found!!!")
-            let rect = CGRect(origin: .zero, size: CGSize(width: 38, height: 38))
-            UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
-            UIColor.red.setFill()
-            UIRectFill(rect)
-            let image = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
             
-            guard let cgImage = image?.cgImage else {
-                fatalError("Image icon not found and dont created!")
+            #if DEBUG
+            print("ATTENTION!!! Domain swither img dont found!")
+            #endif
+            
+            guard let coloredImg = UIImage.colored() else {
+                fatalError("Image icon dont found and dont created!")
             }
-            return UIImage(cgImage: cgImage)
+            return coloredImg
         }
         return img.withRenderingMode(.alwaysTemplate)
     }
     
     private var service: SwitcherServiceInterface
     
-    /// Main delegate, say observers, when server was changed
+    /// Say observers, when server was changed
     public weak var delegate: EnvironmentSwitcherDelegate?
     
     // MARK: - life cicle
-    /// init, should initiated whith configuration
+    /// Initialize switcher with configuration and app container
+    /// - Parameters:
+    ///     - config: Configuration object with servers list and current server.
+    ///     - app: Container of main app UIWindow. Default is UIApplications.shared.
     public init(_ config: ServersListConfigurator, app: MainWindowContaner = UIApplication.shared as MainWindowContaner) {
         service = SwitcherService(config: config, service: SwitcherWindowService.shared(app))
         service.delegate = self

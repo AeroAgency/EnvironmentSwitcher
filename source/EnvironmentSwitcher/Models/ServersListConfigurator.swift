@@ -15,8 +15,12 @@ public struct ServersListConfigurator {
     private(set) var currentServer: String
     private(set) var shouldSelectBeforeFirstScreen: Bool
 
-    /// init method, should contain list of servers, current selected server and flag of needed open select dialog on app start
-    public init(servers: [String], current: String, shouldSelectOnStart: Bool) {
+    /// Initilize configuration for swither
+    /// - Parameters:
+    ///     - servers: List of servers urls in strings
+    ///     - current: Default preselected server. Should be equal one of servers list item
+    ///     - shouldSelectOnStart: when is true, that replaced main application window on application start, when server dont selected. Defaults is true
+    public init(servers: [String], current: String, shouldSelectOnStart: Bool = true) {
         serversList = servers
         currentServer = current
         shouldSelectBeforeFirstScreen = shouldSelectOnStart

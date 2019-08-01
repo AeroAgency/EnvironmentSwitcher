@@ -1,6 +1,0 @@
-framework module Pods_EnvironmentSwitcherExampleTests {
-  umbrella header "Pods-EnvironmentSwitcherExampleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

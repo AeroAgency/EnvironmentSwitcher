@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - controller declaratiom
 class SwitcherServerSelectController: UIViewController {
     
     @IBOutlet private var serverPicker: UIPickerView?
@@ -34,6 +35,7 @@ class SwitcherServerSelectController: UIViewController {
     }
 }
 
+// MARK: - IBActions
 private extension SwitcherServerSelectController {
     @IBAction private func tapCancelButton() {
         delegate?.cancelSwitch()
@@ -54,6 +56,7 @@ private extension SwitcherServerSelectController {
     }
 }
 
+// MARK: - picker view data source
 extension SwitcherServerSelectController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -65,6 +68,7 @@ extension SwitcherServerSelectController: UIPickerViewDataSource {
     
 }
 
+// MARK: - picker view delegate
 extension SwitcherServerSelectController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

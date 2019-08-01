@@ -5,7 +5,7 @@ project 'EnvironmentSwitcherExample.xcodeproj'
 use_frameworks!
 
 def shared_pods
-    pod 'EnvironmentSwitcher', :path => '../EnvironmentSwitcher.podspec'
+    pod 'EnvironmentSwitcher', :git => 'https://github.com/StasanTelnov/EnvironmentSwither.git'
 end
 
 target 'EnvironmentSwitcherExample' do
@@ -29,11 +29,3 @@ post_install do |installer|
         end
     end
 end
-
-# abstract_target 'defaults' do	
-# 	inherit! :search_paths
-# 	
-# 	pod 'EnvironmentSwitcher', :path => '../EnvironmentSwitcher.podspec'
-# 
-# 	target  'EnvironmentSwitcherExample'
-# end
