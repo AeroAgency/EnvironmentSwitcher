@@ -146,7 +146,7 @@ class SwitcherWindowService {
     }
     
     // MARK: timer
-    /// TODO: this is hack for moving to front every 3 seconds. Should find other solution, without timer and sometimes moving window to front
+    /// TODO: this is hack for moving buttons to front every 3 seconds. Should find other solution, without timer and sometimes moving window to front
     private func initTimer() {
         guard checkSubviewsFrontTimer == nil else {
             return

@@ -3,17 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7943A8BE22F45A0A000E94B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8BD22F45A0A000E94B1 /* AppDelegate.swift */; };
-		7943A8C022F45A0A000E94B1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8BF22F45A0A000E94B1 /* RootViewController.swift */; };
-		7943A8C222F45A0A000E94B1 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8C122F45A0A000E94B1 /* DataViewController.swift */; };
-		7943A8C422F45A0A000E94B1 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8C322F45A0A000E94B1 /* ModelController.swift */; };
-		7943A8C722F45A0A000E94B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7943A8C522F45A0A000E94B1 /* Main.storyboard */; };
-		7943A8C922F45A0A000E94B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7943A8C822F45A0A000E94B1 /* Assets.xcassets */; };
-		7943A8CC22F45A0A000E94B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7943A8CA22F45A0A000E94B1 /* LaunchScreen.storyboard */; };
 		7943A8D722F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8D622F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift */; };
 		7943A8E222F45A0A000E94B1 /* EnvironmentSwitcherExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8E122F45A0A000E94B1 /* EnvironmentSwitcherExampleUITests.swift */; };
 		7943A8FB22F45A20000E94B1 /* EnvironmentSwitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7943A8F222F45A20000E94B1 /* EnvironmentSwitcher.framework */; };
@@ -32,6 +25,16 @@
 		79ED4C6F22F46A2D00D0E61E /* AppStartRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4C6322F46A2C00D0E61E /* AppStartRootController.xib */; };
 		79ED4C7022F46A2D00D0E61E /* ServersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C6522F46A2D00D0E61E /* ServersListConfigurator.swift */; };
 		79ED4C7122F46A2D00D0E61E /* EnvironmentSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C6622F46A2D00D0E61E /* EnvironmentSwitcher.swift */; };
+		79ED4C7B22F4704300D0E61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7322F4704300D0E61E /* AppDelegate.swift */; };
+		79ED4C7C22F4704300D0E61E /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7522F4704300D0E61E /* EnvironmentService.swift */; };
+		79ED4C7D22F4704300D0E61E /* ModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7722F4704300D0E61E /* ModalController.swift */; };
+		79ED4C7E22F4704300D0E61E /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7822F4704300D0E61E /* MainTabController.swift */; };
+		79ED4C7F22F4704300D0E61E /* SecondTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7922F4704300D0E61E /* SecondTabController.swift */; };
+		79ED4C8022F4704300D0E61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4C7A22F4704300D0E61E /* Assets.xcassets */; };
+		79ED4C8522F4707E00D0E61E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4C8122F4707E00D0E61E /* LaunchScreen.storyboard */; };
+		79ED4C8622F4707E00D0E61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4C8322F4707E00D0E61E /* Main.storyboard */; };
+		79ED4C8722F477E700D0E61E /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7522F4704300D0E61E /* EnvironmentService.swift */; };
+		79ED4C8822F477E800D0E61E /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7522F4704300D0E61E /* EnvironmentService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,13 +84,6 @@
 
 /* Begin PBXFileReference section */
 		7943A8BA22F45A0A000E94B1 /* EnvironmentSwitcherExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentSwitcherExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7943A8BD22F45A0A000E94B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7943A8BF22F45A0A000E94B1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		7943A8C122F45A0A000E94B1 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		7943A8C322F45A0A000E94B1 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		7943A8C622F45A0A000E94B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7943A8C822F45A0A000E94B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7943A8CB22F45A0A000E94B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7943A8D222F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSwitcherExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7943A8D622F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcherExampleTests.swift; sourceTree = "<group>"; };
 		7943A8D822F45A0A000E94B1 /* ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleTests-Info.plist"; sourceTree = "<group>"; };
@@ -112,6 +108,14 @@
 		79ED4C6322F46A2C00D0E61E /* AppStartRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppStartRootController.xib; sourceTree = "<group>"; };
 		79ED4C6522F46A2D00D0E61E /* ServersListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServersListConfigurator.swift; sourceTree = "<group>"; };
 		79ED4C6622F46A2D00D0E61E /* EnvironmentSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcher.swift; sourceTree = "<group>"; };
+		79ED4C7322F4704300D0E61E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79ED4C7522F4704300D0E61E /* EnvironmentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentService.swift; sourceTree = "<group>"; };
+		79ED4C7722F4704300D0E61E /* ModalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalController.swift; sourceTree = "<group>"; };
+		79ED4C7822F4704300D0E61E /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		79ED4C7922F4704300D0E61E /* SecondTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTabController.swift; sourceTree = "<group>"; };
+		79ED4C7A22F4704300D0E61E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79ED4C8222F4707E00D0E61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79ED4C8422F4707E00D0E61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,13 +225,12 @@
 		7943A91022F45A4B000E94B1 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				7943A8BD22F45A0A000E94B1 /* AppDelegate.swift */,
-				7943A8BF22F45A0A000E94B1 /* RootViewController.swift */,
-				7943A8C122F45A0A000E94B1 /* DataViewController.swift */,
-				7943A8C322F45A0A000E94B1 /* ModelController.swift */,
-				7943A8C522F45A0A000E94B1 /* Main.storyboard */,
-				7943A8C822F45A0A000E94B1 /* Assets.xcassets */,
-				7943A8CA22F45A0A000E94B1 /* LaunchScreen.storyboard */,
+				79ED4C8122F4707E00D0E61E /* LaunchScreen.storyboard */,
+				79ED4C8322F4707E00D0E61E /* Main.storyboard */,
+				79ED4C7422F4704300D0E61E /* Services */,
+				79ED4C7622F4704300D0E61E /* Controllers */,
+				79ED4C7322F4704300D0E61E /* AppDelegate.swift */,
+				79ED4C7A22F4704300D0E61E /* Assets.xcassets */,
 				7943A91322F462C2000E94B1 /* Example-Info.plist */,
 			);
 			path = Example;
@@ -281,6 +284,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		79ED4C7422F4704300D0E61E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79ED4C7522F4704300D0E61E /* EnvironmentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79ED4C7622F4704300D0E61E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79ED4C7722F4704300D0E61E /* ModalController.swift */,
+				79ED4C7822F4704300D0E61E /* MainTabController.swift */,
+				79ED4C7922F4704300D0E61E /* SecondTabController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -303,6 +324,7 @@
 				7943A8B722F45A0A000E94B1 /* Frameworks */,
 				7943A8B822F45A0A000E94B1 /* Resources */,
 				7943A90C22F45A20000E94B1 /* Embed Frameworks */,
+				79B4DEE122F47CA100D8D042 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -358,6 +380,7 @@
 				7943A8EE22F45A20000E94B1 /* Sources */,
 				7943A8EF22F45A20000E94B1 /* Frameworks */,
 				7943A8F022F45A20000E94B1 /* Resources */,
+				79B4DEE022F47C8800D8D042 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -397,6 +420,7 @@
 				TargetAttributes = {
 					7943A8B922F45A0A000E94B1 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					7943A8D122F45A0A000E94B1 = {
 						CreatedOnToolsVersion = 10.3;
@@ -415,7 +439,7 @@
 				};
 			};
 			buildConfigurationList = 7943A8B322F45874000E94B1 /* Build configuration list for PBXProject "EnvironmentSwitcher" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -441,9 +465,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7943A8CC22F45A0A000E94B1 /* LaunchScreen.storyboard in Resources */,
-				7943A8C922F45A0A000E94B1 /* Assets.xcassets in Resources */,
-				7943A8C722F45A0A000E94B1 /* Main.storyboard in Resources */,
+				79ED4C8622F4707E00D0E61E /* Main.storyboard in Resources */,
+				79ED4C8022F4704300D0E61E /* Assets.xcassets in Resources */,
+				79ED4C8522F4707E00D0E61E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,15 +504,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79B4DEE022F47C8800D8D042 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint --config .swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		79B4DEE122F47CA100D8D042 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint --config .swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7943A8B622F45A0A000E94B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7943A8C022F45A0A000E94B1 /* RootViewController.swift in Sources */,
-				7943A8C422F45A0A000E94B1 /* ModelController.swift in Sources */,
-				7943A8C222F45A0A000E94B1 /* DataViewController.swift in Sources */,
-				7943A8BE22F45A0A000E94B1 /* AppDelegate.swift in Sources */,
+				79ED4C7B22F4704300D0E61E /* AppDelegate.swift in Sources */,
+				79ED4C7D22F4704300D0E61E /* ModalController.swift in Sources */,
+				79ED4C7F22F4704300D0E61E /* SecondTabController.swift in Sources */,
+				79ED4C7E22F4704300D0E61E /* MainTabController.swift in Sources */,
+				79ED4C7C22F4704300D0E61E /* EnvironmentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7943A8D722F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift in Sources */,
+				79ED4C8722F477E700D0E61E /* EnvironmentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7943A8E222F45A0A000E94B1 /* EnvironmentSwitcherExampleUITests.swift in Sources */,
+				79ED4C8822F477E800D0E61E /* EnvironmentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,20 +623,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7943A8C522F45A0A000E94B1 /* Main.storyboard */ = {
+		79ED4C8122F4707E00D0E61E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7943A8C622F45A0A000E94B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7943A8CA22F45A0A000E94B1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7943A8CB22F45A0A000E94B1 /* Base */,
+				79ED4C8222F4707E00D0E61E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79ED4C8322F4707E00D0E61E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79ED4C8422F4707E00D0E61E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -587,6 +654,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -788,7 +856,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Tests/ExampleTests/ExampleTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,7 +926,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Tests/ExampleTests/ExampleTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -933,7 +1001,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Tests/ExampleUITests/ExampleUITests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1002,7 +1070,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Tests/ExampleUITests/ExampleUITests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1235,7 +1303,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Tests/EnvironmentSwitcherTests/EnvironmentSwitcherTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1303,7 +1371,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Tests/EnvironmentSwitcherTests/EnvironmentSwitcherTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

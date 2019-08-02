@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
     
     s.source = { :path => 'source/' }
     s.source_files = 'source/*.swift'
-    s.resources = "source/**/*.{xcassets,xib}"
+    s.resources = "source/*.{xcassets,xib}"
 end
