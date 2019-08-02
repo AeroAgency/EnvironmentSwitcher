@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
-  	s.version = '0.9.0'
+  	s.version = '0.9.1'
     s.name = 'EnvironmentSwitcher'
     s.summary = 'Switch REST environments on the fly.'
     s.description = 'Switch servers and HTTP endpoints on the fly and before starting the application.'
