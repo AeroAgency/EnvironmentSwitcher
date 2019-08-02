@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
     s.homepage = 'https://github.com/StasanTelnov/EnvironmentSwither'
     
     s.source = { :path => 'source/' }
-    s.source_files = 'source/**/*.swift'
-    s.resources = "source/*.{xcassets,xib}"
+    s.source_files = 'Source/**/*.swift'
+    s.resources = "Source/**/*.{xcassets,xib}"
 end
