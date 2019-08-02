@@ -13,8 +13,6 @@ Pod::Spec.new do |s|
     s.homepage = 'https://github.com/StasanTelnov/EnvironmentSwither'
     
     s.source = { :path => 'source/' }
-    s.source_files = 'source/**/*.swift'
+    s.source_files = 'source/*.swift'
     s.resources = "source/**/*.{xcassets,xib}"
-    
-    s.exclude_files = 'source/**/*Tests.*'
 end
