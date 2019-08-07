@@ -83,6 +83,9 @@ class MyWindowContainer: MainWindowContaner {
 //...
 
 class SomeClass {
+
+    private(set) var switcher: EnvironmentSwitcher
+    
     init() {
         let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], current: "https://stage.com")
         let application = MyWindowContainer()
@@ -100,6 +103,9 @@ extension SomeClass: EnvironmentSwitcherDelegate {
 Запуск с дефолтным котейнером `UIWindow` и отключённым автостартом при запуске:
 ```swift
 class SomeClass {
+
+    private(set) var switcher: EnvironmentSwitcher
+    
     init() {
         let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], current: "https://stage.com", shouldSelectOnStart: false)
         switcher = EnvironmentSwitcher(config)
