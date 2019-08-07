@@ -182,9 +182,11 @@ class SwitcherWindowService {
     }
     
     private func iconFrame() -> CGRect {
+        #if DEBUG
         print("vertical margin: \(SwitcherIconRects.Margins.verticalX)")
 //        print("horizontal margin: \(SwitcherIconRects.Margins.horizontalX)")
 //        print("-----")
+        #endif
         
         var position = SwitcherIconRects.horizontal
         if UIDevice.current.orientation.isLandscape {
