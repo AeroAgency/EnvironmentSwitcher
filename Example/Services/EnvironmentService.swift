@@ -22,7 +22,7 @@ extension NSNotification.Name {
 extension EnvironmentListener {
     func fetchDomainFromNotification(_ notification: Notification) -> String? {
         guard let newDomain = notification.userInfo?[Notification.Name.serverChanged] as? String else {
-            print("ATTENTION!!! Dont can get new server")
+            print("server not selected".i18n)
             
             #if DEBUG
             fatalError("New server address dont detected")

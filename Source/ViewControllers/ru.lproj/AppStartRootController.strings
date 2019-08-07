@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Перед стартом приложения необходимо выбрать сервер."; ObjectID = "6lb-3G-UDi"; */
+"6lb-3G-UDi.text" = "Перед стартом приложения необходимо выбрать сервер.";
+
+/* Class = "UILabel"; text = "Текущий сервер:"; ObjectID = "A7b-ir-Wmh"; */
+"A7b-ir-Wmh.text" = "Текущий сервер:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MmP-gd-pJk"; */
+"MmP-gd-pJk.text" = "Label";

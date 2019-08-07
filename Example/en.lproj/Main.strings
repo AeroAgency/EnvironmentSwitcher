@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Show modal view"; ObjectID = "A3k-6e-yBC"; */
+"A3k-6e-yBC.normalTitle" = "Show modal view";
+
+/* Class = "UILabel"; text = "Current server:"; ObjectID = "FVT-W1-1l4"; */
+"FVT-W1-1l4.text" = "Current server:";
+
+/* Class = "UILabel"; text = "Make double tap on area a little below center of status bar. Icon will appear . Make long tap around 2 seconds on icon and view with servers list will open."; ObjectID = "aJO-Xb-TbF"; */
+"aJO-Xb-TbF.text" = "Make double tap on area a little below center of status bar. Icon will appear . Make long tap around 2 seconds on icon and view with servers list will open.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bmC-ir-cy6"; */
+"bmC-ir-cy6.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "First"; ObjectID = "hWf-TA-kem"; */
+"hWf-TA-kem.title" = "First";
+
+/* Class = "UIBarButtonItem"; title = "close"; ObjectID = "qck-iR-Owk"; */
+"qck-iR-Owk.title" = "close";
+
+/* Class = "UITabBarItem"; badgeValue = "1"; ObjectID = "uY8-x0-OxU"; */
+"uY8-x0-OxU.badgeValue" = "1";
+
+/* Class = "UITabBarItem"; title = "Second"; ObjectID = "uY8-x0-OxU"; */
+"uY8-x0-OxU.title" = "Second";

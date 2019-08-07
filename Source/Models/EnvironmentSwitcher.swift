@@ -22,7 +22,7 @@ public class EnvironmentSwitcher {
         guard let img = UIImage(named: "domain", in: bundle, compatibleWith: nil) else {
             
             #if DEBUG
-            print("ATTENTION!!! Domain swither img dont found!")
+            print("change server icon dont found".i18n)
             #endif
             
             guard let coloredImg = UIImage.colored() else {

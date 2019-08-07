@@ -10,25 +10,27 @@ import UIKit
 
 // MARK: - sizes
 private enum SwitcherIconRects {
-    private static let size = 42
+    private static let size = 48
     
-    private enum Margins {
+    private static let yPosition: Int = {
+        let margin = 4
+        if #available(iOS 11.0, *) {
+            guard let vc = SwitcherWindowService.shared().environmentSwitcherWindow.rootViewController as? SwitcherServerSelectController else {
+                return margin
+            }
+            return Int(vc.view.safeAreaInsets.top / 2) + margin
+        }
+        return margin
+    }()
+    
+    
+    enum Margins {
         static let horizontalX = Int(UIScreen.main.bounds.width / 2) - Int(size / 2)
         static let verticalX = Int(UIScreen.main.bounds.height / 2) - Int(size / 2)
     }
     
-    private func yPosition() -> Int {
-        if #available(iOS 11.0, *) {
-            guard let vc = SwitcherWindowService.shared().environmentSwitcherWindow.rootViewController as? SwitcherServerSelectController else {
-                return 0
-            }
-            return Int(vc.view.safeAreaInsets.top)
-        }
-        return 0
-    }
-    
-    static let horizontal = CGRect(x: Margins.horizontalX, y: 0, width: size, height: size)
-    static let vertical = CGRect(x: Margins.verticalX, y: 0, width: size, height: size)
+    static let horizontal = CGRect(x: Margins.horizontalX, y: yPosition, width: size, height: size)
+    static let vertical = CGRect(x: Margins.verticalX, y: yPosition, width: size, height: size)
 }
 
 
@@ -180,11 +182,14 @@ class SwitcherWindowService {
     }
     
     private func iconFrame() -> CGRect {
+        print("vertical margin: \(SwitcherIconRects.Margins.verticalX)")
+//        print("horizontal margin: \(SwitcherIconRects.Margins.horizontalX)")
+//        print("-----")
+        
         var position = SwitcherIconRects.horizontal
         if UIDevice.current.orientation.isLandscape {
             position = SwitcherIconRects.vertical
         }
-        
         return position
     }
     

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793EF23722FADBE900FBFE04 /* SwitcherServerSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793EF23922FADBE900FBFE04 /* SwitcherServerSelectController.xib */; };
+		793EF23E22FADBF600FBFE04 /* AppStartRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793EF24022FADBF600FBFE04 /* AppStartRootController.xib */; };
+		793EF24822FADCF000FBFE04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 793EF24A22FADCF000FBFE04 /* Localizable.strings */; };
+		793EF24E22FADD0E00FBFE04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 793EF25022FADD0E00FBFE04 /* Localizable.strings */; };
+		793EF25322FADD5500FBFE04 /* String+i18n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EF25222FADD5500FBFE04 /* String+i18n.swift */; };
 		7943A8D722F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8D622F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift */; };
 		7943A8E222F45A0A000E94B1 /* EnvironmentSwitcherExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8E122F45A0A000E94B1 /* EnvironmentSwitcherExampleUITests.swift */; };
 		7943A8FB22F45A20000E94B1 /* EnvironmentSwitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7943A8F222F45A20000E94B1 /* EnvironmentSwitcher.framework */; };
@@ -20,9 +25,7 @@
 		79ED4C6A22F46A2D00D0E61E /* UIImage+colored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C5C22F46A2C00D0E61E /* UIImage+colored.swift */; };
 		79ED4C6B22F46A2D00D0E61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4C5E22F46A2C00D0E61E /* Assets.xcassets */; };
 		79ED4C6C22F46A2D00D0E61E /* SwitcherServerSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C6022F46A2C00D0E61E /* SwitcherServerSelectController.swift */; };
-		79ED4C6D22F46A2D00D0E61E /* SwitcherServerSelectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4C6122F46A2C00D0E61E /* SwitcherServerSelectController.xib */; };
 		79ED4C6E22F46A2D00D0E61E /* AppStartRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C6222F46A2C00D0E61E /* AppStartRootController.swift */; };
-		79ED4C6F22F46A2D00D0E61E /* AppStartRootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79ED4C6322F46A2C00D0E61E /* AppStartRootController.xib */; };
 		79ED4C7022F46A2D00D0E61E /* ServersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C6522F46A2D00D0E61E /* ServersListConfigurator.swift */; };
 		79ED4C7122F46A2D00D0E61E /* EnvironmentSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C6622F46A2D00D0E61E /* EnvironmentSwitcher.swift */; };
 		79ED4C7B22F4704300D0E61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED4C7322F4704300D0E61E /* AppDelegate.swift */; };
@@ -83,6 +86,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		793EF23122FADBA300FBFE04 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		793EF23222FADBA300FBFE04 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		793EF23422FADBC400FBFE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		793EF23622FADBD500FBFE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		793EF23822FADBE900FBFE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SwitcherServerSelectController.xib; sourceTree = "<group>"; };
+		793EF23B22FADBF000FBFE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SwitcherServerSelectController.strings; sourceTree = "<group>"; };
+		793EF23D22FADBF000FBFE04 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SwitcherServerSelectController.strings; sourceTree = "<group>"; };
+		793EF23F22FADBF600FBFE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AppStartRootController.xib; sourceTree = "<group>"; };
+		793EF24222FADBFB00FBFE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AppStartRootController.strings; sourceTree = "<group>"; };
+		793EF24422FADBFC00FBFE04 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AppStartRootController.strings; sourceTree = "<group>"; };
+		793EF24922FADCF000FBFE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		793EF24B22FADCF400FBFE04 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		793EF24F22FADD0E00FBFE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		793EF25122FADD0F00FBFE04 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		793EF25222FADD5500FBFE04 /* String+i18n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+i18n.swift"; sourceTree = "<group>"; };
 		7943A8BA22F45A0A000E94B1 /* EnvironmentSwitcherExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentSwitcherExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7943A8D222F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSwitcherExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7943A8D622F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcherExampleTests.swift; sourceTree = "<group>"; };
@@ -103,9 +121,7 @@
 		79ED4C5C22F46A2C00D0E61E /* UIImage+colored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+colored.swift"; sourceTree = "<group>"; };
 		79ED4C5E22F46A2C00D0E61E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79ED4C6022F46A2C00D0E61E /* SwitcherServerSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitcherServerSelectController.swift; sourceTree = "<group>"; };
-		79ED4C6122F46A2C00D0E61E /* SwitcherServerSelectController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitcherServerSelectController.xib; sourceTree = "<group>"; };
 		79ED4C6222F46A2C00D0E61E /* AppStartRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStartRootController.swift; sourceTree = "<group>"; };
-		79ED4C6322F46A2C00D0E61E /* AppStartRootController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppStartRootController.xib; sourceTree = "<group>"; };
 		79ED4C6522F46A2D00D0E61E /* ServersListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServersListConfigurator.swift; sourceTree = "<group>"; };
 		79ED4C6622F46A2D00D0E61E /* EnvironmentSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcher.swift; sourceTree = "<group>"; };
 		79ED4C7322F4704300D0E61E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +225,7 @@
 				79ED4C5E22F46A2C00D0E61E /* Assets.xcassets */,
 				7943A8F422F45A20000E94B1 /* EnvironmentSwitcher.h */,
 				7943A8F522F45A20000E94B1 /* Source-Info.plist */,
+				793EF24A22FADCF000FBFE04 /* Localizable.strings */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -232,6 +249,7 @@
 				79ED4C7322F4704300D0E61E /* AppDelegate.swift */,
 				79ED4C7A22F4704300D0E61E /* Assets.xcassets */,
 				7943A91322F462C2000E94B1 /* Example-Info.plist */,
+				793EF25022FADD0E00FBFE04 /* Localizable.strings */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -260,6 +278,7 @@
 			children = (
 				79ED4C5B22F46A2C00D0E61E /* UIViewController+fromNib.swift */,
 				79ED4C5C22F46A2C00D0E61E /* UIImage+colored.swift */,
+				793EF25222FADD5500FBFE04 /* String+i18n.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -268,9 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				79ED4C6022F46A2C00D0E61E /* SwitcherServerSelectController.swift */,
-				79ED4C6122F46A2C00D0E61E /* SwitcherServerSelectController.xib */,
+				793EF23922FADBE900FBFE04 /* SwitcherServerSelectController.xib */,
 				79ED4C6222F46A2C00D0E61E /* AppStartRootController.swift */,
-				79ED4C6322F46A2C00D0E61E /* AppStartRootController.xib */,
+				793EF24022FADBF600FBFE04 /* AppStartRootController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -445,6 +464,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 7943A8AF22F45874000E94B1;
 			productRefGroup = 7943A8BB22F45A0A000E94B1 /* Products */;
@@ -466,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ED4C8622F4707E00D0E61E /* Main.storyboard in Resources */,
+				793EF24E22FADD0E00FBFE04 /* Localizable.strings in Resources */,
 				79ED4C8022F4704300D0E61E /* Assets.xcassets in Resources */,
 				79ED4C8522F4707E00D0E61E /* LaunchScreen.storyboard in Resources */,
 			);
@@ -490,8 +511,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ED4C6B22F46A2D00D0E61E /* Assets.xcassets in Resources */,
-				79ED4C6D22F46A2D00D0E61E /* SwitcherServerSelectController.xib in Resources */,
-				79ED4C6F22F46A2D00D0E61E /* AppStartRootController.xib in Resources */,
+				793EF24822FADCF000FBFE04 /* Localizable.strings in Resources */,
+				793EF23722FADBE900FBFE04 /* SwitcherServerSelectController.xib in Resources */,
+				793EF23E22FADBF600FBFE04 /* AppStartRootController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +608,7 @@
 				79ED4C6722F46A2D00D0E61E /* SwitcherWindowService.swift in Sources */,
 				79ED4C7022F46A2D00D0E61E /* ServersListConfigurator.swift in Sources */,
 				79ED4C6922F46A2D00D0E61E /* UIViewController+fromNib.swift in Sources */,
+				793EF25322FADD5500FBFE04 /* String+i18n.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,10 +646,50 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		793EF23922FADBE900FBFE04 /* SwitcherServerSelectController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793EF23822FADBE900FBFE04 /* Base */,
+				793EF23B22FADBF000FBFE04 /* en */,
+				793EF23D22FADBF000FBFE04 /* ru */,
+			);
+			name = SwitcherServerSelectController.xib;
+			sourceTree = "<group>";
+		};
+		793EF24022FADBF600FBFE04 /* AppStartRootController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793EF23F22FADBF600FBFE04 /* Base */,
+				793EF24222FADBFB00FBFE04 /* en */,
+				793EF24422FADBFC00FBFE04 /* ru */,
+			);
+			name = AppStartRootController.xib;
+			sourceTree = "<group>";
+		};
+		793EF24A22FADCF000FBFE04 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793EF24922FADCF000FBFE04 /* en */,
+				793EF24B22FADCF400FBFE04 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		793EF25022FADD0E00FBFE04 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793EF24F22FADD0E00FBFE04 /* en */,
+				793EF25122FADD0F00FBFE04 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		79ED4C8122F4707E00D0E61E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				79ED4C8222F4707E00D0E61E /* Base */,
+				793EF23122FADBA300FBFE04 /* ru */,
+				793EF23622FADBD500FBFE04 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -635,6 +698,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				79ED4C8422F4707E00D0E61E /* Base */,
+				793EF23222FADBA300FBFE04 /* ru */,
+				793EF23422FADBC400FBFE04 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -645,6 +710,7 @@
 		7943A8B422F45874000E94B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SWIFT_VERSION = 5.0;
 			};
@@ -653,6 +719,7 @@
 		7943A8B522F45874000E94B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SWIFT_VERSION = 5.0;
 			};

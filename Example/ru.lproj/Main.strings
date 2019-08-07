@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Показать модальное окно"; ObjectID = "A3k-6e-yBC"; */
+"A3k-6e-yBC.normalTitle" = "Показать модальное окно";
+
+/* Class = "UILabel"; text = "Текущий сервер:"; ObjectID = "FVT-W1-1l4"; */
+"FVT-W1-1l4.text" = "Текущий сервер:";
+
+/* Class = "UILabel"; text = "Сделайте двойной тап чуть ниже центра статус бара. Появится иконка. Удерживайте иконку около 2 секунд, и откроется окно выбора сервера.""; ObjectID = "aJO-Xb-TbF"; */
+"aJO-Xb-TbF.text" = "Сделайте двойной тап чуть ниже центра статус бара. Появится иконка. Удерживайте иконку около 2 секунд, и откроется окно выбора сервера.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bmC-ir-cy6"; */
+"bmC-ir-cy6.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Первый"; ObjectID = "hWf-TA-kem"; */
+"hWf-TA-kem.title" = "Первый";
+
+/* Class = "UIBarButtonItem"; title = "закрыть"; ObjectID = "qck-iR-Owk"; */
+"qck-iR-Owk.title" = "закрыть";
+
+/* Class = "UITabBarItem"; badgeValue = "1"; ObjectID = "uY8-x0-OxU"; */
+"uY8-x0-OxU.badgeValue" = "1";
+
+/* Class = "UITabBarItem"; title = "Второй"; ObjectID = "uY8-x0-OxU"; */
+"uY8-x0-OxU.title" = "Второй";
