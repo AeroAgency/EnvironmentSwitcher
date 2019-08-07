@@ -54,11 +54,16 @@ pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwi
 Распакуйте и перенесите содержимое папки `Source` в свой проект.
 
 ## Как это работает
+
+![](preview_ru.gif)
+
 1. При инициализации библиотеки указываются список доступных серверов и сервер по умолчанию.
 2. Библиотека добавляет на основное `UIWindow` невидимую кнопку (центр экрана по горизонтали, 0 отступ по вертикали).
 Кнопка не видима, чтобы не закрывать собой контент, и имеет отступ 0 от границ экрана, чтобы не налезать на `NavigationBar`.
 2. Двойной тап по невидимой кнопке - показывает кнопку с иконкой в этой же области, которая уже может перекрывать контент.
 3. `LongTap` в 2 или более секунд добавляет новый `UIWindow` поверх основного, с возможностью выбора активного сервера.
+
+Обьект, желающий получать уведомления о смене сервера, должен реализоввывать метод `func serverDidChanged(_ newServer: String)` протокола `EnvironmentSwitcherDelegate`
 
 **⚠️️ Внимание** По умолчанию, EnvironmentSwitcher инициалируется в режиме выбора сервера **ДО** запуска стартового `UIViewController` приложения. В этом случае в момент инициации библиотека заменяет `keyWindow` в `UIApplication` на свой. Чтобы запустить выбор сервера до запуска стартового `UIViewController`, следует инициировать EnvironmentSwitcher в методе `AppDelegate`:
 ```swift
@@ -67,4 +72,44 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 Иначе вам следует при иницииации указывать параметр `shouldSelectOnStart` в `false`, в противном случае, при инициализации `keyWindow` будет подменён.
 
 ## Примеры
-В разработке...
+Запуск c конкретным кастомным котейнером `UIWindow`:
+```swift
+class MyWindowContainer: MainWindowContaner {
+    var mainWindow: UIWindow? {
+        return UIWindow()
+    }
+}
+
+//...
+
+class SomeClass {
+    init() {
+        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], current: "https://stage.com")
+        let application = MyWindowContainer()
+        switcher = EnvironmentSwitcher(config, app: application)
+        switcher.delegate = self
+    }
+}
+
+extension SomeClass: EnvironmentSwitcherDelegate {
+    func serverDidChanged(_ newServer: String) {
+        print("New server is \(newServer)")
+    }
+}
+```
+Запуск с дефолтным котейнером `UIWindow` и отключённым автостартом при запуске:
+```swift
+class SomeClass {
+    init() {
+        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], current: "https://stage.com", shouldSelectOnStart: false)
+        switcher = EnvironmentSwitcher(config)
+        switcher.delegate = self
+    }
+}
+
+extension SomeClass: EnvironmentSwitcherDelegate {
+    func serverDidChanged(_ newServer: String) {
+        print("New server is \(newServer)")
+    }
+}
+```
