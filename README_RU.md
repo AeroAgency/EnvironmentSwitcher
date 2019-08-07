@@ -5,14 +5,14 @@ ReadMe: [[EN](README.md)] | [[RU](README_RU.md)]
 **EnvironmentSwither** - утилита предназначенная для смены окружения (серверов) на лету.
 Предназанчена в первую очередь для тестовых сборок, для разработчиков / тестировщиков / менеджеров, чтобы иметь возможность в рамках одной сборки переключаться между различными несколькими серверами и http endpoints.
 
-- [Why?](#why?)
-- [Features](#Features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [How it work](#how-it-work)
-- [Examples](#examples)
+- [Зачем?](#зачем?)
+- [Фичи](#фичи)
+- [Требования](#требования)
+- [Установка](#установка)
+- [Как это работает](#как-это-работает)
+- [Примеры](#примеры)
 
-## Why?
+## Зачем?
 При разработке часто возникают ситуации, когда одну и туже сборку необходимо протестировать в нескольких окружениях. Для этого приходится делать несколько сборок, с одинаковой кодовой базой, но направленными на разные Http endpoints в [TestFlight](https://developer.apple.com/testflight/), для тестирования. Это приводит к
 - путанице, какой именно номер сборки на какое окружение смотрит
 - приходится нелать несколько одинаковых сборок и отдавать их на тестирование, что приводит к замедлению процесса разработки
@@ -24,7 +24,7 @@ ReadMe: [[EN](README.md)] | [[RU](README_RU.md)]
   - в предыдущей сборке ничего не сломалось
   - текущая сборка работалет правильно после релиза
 
-## Features
+## Фичи
 - [x] Указание списка доступных серверов
 - [x] Указания сервера по-умолчанию
 - [x] Возможность выбрать сервер сразу после сплеш-экрана до запуска основного
@@ -37,25 +37,25 @@ ReadMe: [[EN](README.md)] | [[RU](README_RU.md)]
 - [ ] Интерактивная инструкция для тестировщиков, при первом запуске
 - [ ] Расширенные примеры
 
-## Requirements
+## Требования
 - iOS 10.0+
 - Xcode 10.2+
 - Swift 5+
 
-## Installation
+## Установка
 ### CocoaPods
-Add the following entry to your Podfile:
+Добавьте следующую строку в ваш Podfile:
 ```rb
 pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwither.git'
 ```
-After run `pod install` command in terminal.
-Don't forget to `import EnvironmentSwitcher` in all files, which you planned using this library
+Затем в консоли в папке с вашим проектом выполните команду `pod install`.
+Незабудьте перед использованием добавить `import EnvironmentSwitcher` в файле, где вы собираетесь инициализировать использование библиотеку.
 
-### Manual
+### Вручную
 Скачайте архив из ветки `master` (стабильная версия) или интересующую вас версию из [releases](https://github.com/AeroAgency/EnvironmentSwither/releases).
 Распакуйте и перенесите содержимое папки `Source` в свой проект.
 
-## How it work
+## Как это работает
 
 ![](preview_ru.gif)
 
@@ -67,14 +67,14 @@ Don't forget to `import EnvironmentSwitcher` in all files, which you planned usi
 
 Обьект, желающий получать уведомления о смене сервера, должен реализоввывать метод `func serverDidChanged(_ newServer: String)` протокола `EnvironmentSwitcherDelegate`
 
-**⚠️️ ATTENTION** По умолчанию, EnvironmentSwitcher инициалируется в режиме выбора сервера **ДО** запуска стартового `UIViewController` приложения. В этом случае в момент инициации библиотека заменяет `keyWindow` в `UIApplication` на свой. Чтобы запустить выбор сервера до запуска стартового `UIViewController`, следует инициировать EnvironmentSwitcher в методе `AppDelegate`:
+**⚠️️ ВНИМАНИЕ** По умолчанию, EnvironmentSwitcher инициалируется в режиме выбора сервера **ДО** запуска стартового `UIViewController` приложения. В этом случае в момент инициации библиотека заменяет `keyWindow` в `UIApplication` на свой. Чтобы запустить выбор сервера до запуска стартового `UIViewController`, следует инициировать EnvironmentSwitcher в методе `AppDelegate`:
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
 ```
 Иначе вам следует при иницииации указывать параметр `shouldSelectOnStart` в `false`, в противном случае, при инициализации `keyWindow` будет подменён.
 
-## Examples
-Run with custom `UIWindow` container:
+## Примеры
+Запуск c конкретным кастомным котейнером `UIWindow`:
 ```swift
 class MyWindowContainer: MainWindowContaner {
     var mainWindow: UIWindow? {
@@ -102,7 +102,7 @@ extension SomeClass: EnvironmentSwitcherDelegate {
     }
 }
 ```
-Run with default `UIWindow` container and disabled autostart on app launch:
+Запуск с дефолтным контейнером `UIWindow` и отключённым автостартом при старте приложения:
 ```swift
 class SomeClass {
 
