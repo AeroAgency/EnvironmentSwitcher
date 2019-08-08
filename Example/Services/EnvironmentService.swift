@@ -34,7 +34,7 @@ extension EnvironmentListener {
     }
 }
 
-// MARK: - swither singleton
+// MARK: - switcher singleton
 class EnvironmentService {
 
     // MARK: variables
@@ -73,7 +73,7 @@ class EnvironmentService {
 }
 
 
-// MARK: - environment  swither delegate
+// MARK: - environment  switcher delegate
 extension EnvironmentService: EnvironmentSwitcherDelegate {
     func serverDidChanged(_ newServer: String) {
         currentServer = newServer

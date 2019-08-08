@@ -35,7 +35,7 @@ private enum SwitcherIconRects {
 
 
 // MARK: - container of UIWindow protocol and UIApplication extension
-/// Protocol for main window container. Swither will displayed over main window and
+/// Protocol for main window container. Switcher will displayed over main window and
 /// replased main window on application start of this container.
 /// -
 /// By default using UIApplication with keyWindow or

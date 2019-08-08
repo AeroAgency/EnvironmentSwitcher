@@ -1,8 +1,8 @@
-# EnvironmentSwither
+# EnvironmentSwitcher
 
 ReadMe: [**EN**] | [[RU](README_RU.md)]
 
-**EnvironmentSwither** - library for change environments (servers) on the fly.
+**EnvironmentSwitcher** - library for change environments (servers) on the fly.
 Intended for testing builds, for developers / testers / managers, who need an opportunity of changing some different servers and http endpoints in one build.
 
 **⚠️️ ATTENTION** Highly recommended using this library only for non-production builds and dont leave it to app store builds.
@@ -49,13 +49,13 @@ This library help solve cases:
 ### CocoaPods
 Add the following entry to your Podfile:
 ```rb
-pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwither.git'
+pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwitcher.git'
 ```
 After run `pod install` command in terminal.
 Don't forget to `import EnvironmentSwitcher` in all files, which you planned using this library
 
 ### Manual
-Download archive of `master` branch (stable version) or interesting version for you from [releases](https://github.com/AeroAgency/EnvironmentSwither/releases).
+Download archive of `master` branch (stable version) or interesting version for you from [releases](https://github.com/AeroAgency/EnvironmentSwitcher/releases).
 Unzip and drag `Source` folder to your project.
 
 ## How it work
