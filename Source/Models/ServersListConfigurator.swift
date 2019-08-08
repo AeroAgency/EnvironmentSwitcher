@@ -15,7 +15,7 @@ public struct ServersListConfigurator {
     private(set) var currentServer: String
     private(set) var shouldSelectBeforeFirstScreen: Bool
 
-    /// Initilize configuration for swither
+    /// Initilize configuration for switcher
     /// - Parameters:
     ///     - servers: List of servers urls in strings
     ///     - current: Default preselected server. Should be equal one of servers list item

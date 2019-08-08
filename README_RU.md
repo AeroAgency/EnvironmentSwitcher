@@ -1,9 +1,10 @@
-# EnvironmentSwither
+# EnvironmentSwitcher
 
-ReadMe: [[EN](README.md)] | [*RU*]
+ReadMe: [[EN](README.md)] | [**RU**]
 
-**EnvironmentSwither** - утилита предназначенная для смены окружения (серверов) на лету.
+**EnvironmentSwitcher** - утилита предназначенная для смены окружения (серверов) на лету.
 Предназначена в первую очередь для тестовых сборок, для разработчиков / тестировщиков / менеджеров, чтобы иметь возможность в рамках одной сборки переключаться между различными несколькими серверами и http endpoints.
+
 **⚠️️ ВНИМАНИЕ** Настоятельно рекомендуется использовать эту библиотеку только для не production сборок и убирать её из сборок для app store.
 
 - [Зачем?](#зачем?)
@@ -47,13 +48,13 @@ ReadMe: [[EN](README.md)] | [*RU*]
 ### CocoaPods
 Добавьте следующую строку в ваш Podfile:
 ```rb
-pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwither.git'
+pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwitcher.git'
 ```
 Затем в консоли в папке с вашим проектом выполните команду `pod install`.
 Незабудьте перед использованием добавить `import EnvironmentSwitcher` в файле, где вы собираетесь инициализировать использование библиотеку.
 
 ### Вручную
-Скачайте архив из ветки `master` (стабильная версия) или интересующую вас версию из [releases](https://github.com/AeroAgency/EnvironmentSwither/releases).
+Скачайте архив из ветки `master` (стабильная версия) или интересующую вас версию из [releases](https://github.com/AeroAgency/EnvironmentSwitcher/releases).
 Распакуйте и перенесите содержимое папки `Source` в свой проект.
 
 ## Как это работает
