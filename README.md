@@ -1,9 +1,10 @@
 # EnvironmentSwither
 
-ReadMe: [*EN*] | [[RU](README_RU.md)]
+ReadMe: [**EN**] | [[RU](README_RU.md)]
 
 **EnvironmentSwither** - library for change environments (servers) on the fly.
 Intended for testing builds, for developers / testers / managers, who need an opportunity of changing some different servers and http endpoints in one build.
+
 **⚠️️ ATTENTION** Highly recommended using this library only for non-production builds and dont leave it to app store builds.
 
 - [Why?](#why?)
