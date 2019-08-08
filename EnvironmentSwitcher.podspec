@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
-  	s.version = '1.0.0'
+  	s.version = '1.0.1'
     s.name = 'EnvironmentSwitcher'
     s.summary = 'Switch REST environments on the fly.'
     s.description = 'Switch servers and HTTP endpoints on the fly and before starting the application.'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     
   	s.license = { :type => 'MIT', :file => 'LICENSE.md' }
     s.authors = { 'Stas Telnov' => 'telnov@aeroidea.ru' }
-    s.homepage = 'https://github.com/StasanTelnov/EnvironmentSwitcher'
+    s.homepage = 'https://github.com/AeroAgency/EnvironmentSwitcher'
     
     s.source = { :git => "https://github.com/AeroAgency/EnvironmentSwitcher.git", :tag => s.version }
     s.source_files = 'Source/**/*.swift'
