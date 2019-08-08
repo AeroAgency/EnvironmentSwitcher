@@ -59,7 +59,7 @@ Unzip and drag `Source` folder to your project.
 
 ## How it work
 
-![](preview.mp4)
+![](preview.gif)
 
 1. On init sets a list of available servers and default server.
 2. Library add invisible button  to main `UIWindow` (horizontal center of screen and small indent from status bar by vertical).
