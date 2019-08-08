@@ -83,7 +83,7 @@ extension SwitcherService: ServersDataSource {
     }
 }
 
-// MARK: - swither delegate
+// MARK: - switcher delegate
 extension SwitcherService: PickerServersDelegate {
     func cancelSwitch() {
         toggleSelectServerVc()
