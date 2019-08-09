@@ -12,8 +12,10 @@ import UIKit
 class SwitcherServerSelectController: UIViewController {
     
     @IBOutlet private var serverPicker: UIPickerView?
+    @IBOutlet private var settingsView: SettingsView?
     
-    weak var delegate: PickerServersDelegate?
+    weak var settingsDelegate: SettingsViewDelegate?
+    weak var pickerDelegate: PickerServersDelegate?
     weak var dataSource: ServersDataSource? {
         didSet {
             serverPicker?.reloadAllComponents()
@@ -38,7 +40,7 @@ class SwitcherServerSelectController: UIViewController {
 // MARK: - IBActions
 private extension SwitcherServerSelectController {
     @IBAction private func tapCancelButton() {
-        delegate?.cancelSwitch()
+        pickerDelegate?.cancelSwitch()
     }
     
     @IBAction private func tapDoneButton() {
@@ -52,7 +54,7 @@ private extension SwitcherServerSelectController {
             return
         }
         
-        delegate?.selectedServer(serverDomain)
+        pickerDelegate?.selectedServer(serverDomain)
     }
 }
 
@@ -78,5 +80,12 @@ extension SwitcherServerSelectController: UIPickerViewDelegate {
         
         return list[row]
         
+    }
+}
+
+// MARK: - settigns view delegate
+extension SwitcherServerSelectController: SettingsViewDelegate {
+    func isSaveServerToggled(_ isSaveServer: Bool) {
+        settingsDelegate?.isSaveServerToggled(isSaveServer)
     }
 }

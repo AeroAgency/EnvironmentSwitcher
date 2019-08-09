@@ -23,6 +23,7 @@ protocol PickerServersDelegate: class {
     func selectedServer(_ domain: String)
 }
 
+
 // MARK: - interface
 protocol SwitcherServiceInterface {
     var delegate: SwitcherServiceDelegate? { get set }
@@ -30,6 +31,7 @@ protocol SwitcherServiceInterface {
     func dispaySelectVcOnAppStartIfNeeded()
     func toggleSelectServerVc()
 }
+
 
 // MARK: - service
 class SwitcherService: SwitcherServiceInterface {
@@ -49,7 +51,8 @@ class SwitcherService: SwitcherServiceInterface {
             fatalError("Select server view controller dont found")
         }
         
-        vc.delegate = self
+        vc.pickerDelegate = self
+        vc.settingsDelegate = self
         vc.dataSource = self
         
         dispaySelectVcOnAppStartIfNeeded()
@@ -73,6 +76,7 @@ class SwitcherService: SwitcherServiceInterface {
     }
 }
 
+
 // MARK: - servers list data source
 extension SwitcherService: ServersDataSource {
     var current: String {
@@ -83,7 +87,8 @@ extension SwitcherService: ServersDataSource {
     }
 }
 
-// MARK: - switcher delegate
+
+// MARK: - picker select server delegate
 extension SwitcherService: PickerServersDelegate {
     func cancelSwitch() {
         toggleSelectServerVc()
@@ -92,5 +97,17 @@ extension SwitcherService: PickerServersDelegate {
     func selectedServer(_ domain: String) {
         toggleSelectServerVc()
         delegate?.serverSelected(domain)
+        
+        if configurator.settings.isServerShouldSave {
+            configurator.settings.savedServer = domain
+        }
+    }
+}
+
+
+// MARK: - settings view delegate
+extension SwitcherService: SettingsViewDelegate {
+    func isSaveServerToggled(_ isSaveServer: Bool) {
+        configurator.settings.isServerShouldSave = isSaveServer
     }
 }
