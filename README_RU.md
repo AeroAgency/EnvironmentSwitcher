@@ -1,5 +1,7 @@
 # EnvironmentSwitcher
 
+[![Platforms](https://img.shields.io/cocoapods/p/EnvironmentSwitcher)](https://developer.apple.com/ios/) [![iOS version](https://img.shields.io/badge/ios-10.0-blue)](https://developer.apple.com/ios/) [![Swift version](https://img.shields.io/badge/Swift-5.0-blue.svg?style=flat)](https://developer.apple.com/swift/) [![CocoaPods](https://img.shields.io/cocoapods/v/EnvironmentSwitcher.svg)](https://cocoapods.org/pods/EnvironmentSwitcher) [![License](https://img.shields.io/cocoapods/l/EnvironmentSwitcher?color=blue)](https://raw.githubusercontent.com/AeroAgency/EnvironmentSwitcher/master/LICENSE.md)
+
 ReadMe: [[EN](README.md)] | [**RU**]
 
 **EnvironmentSwitcher** - утилита предназначенная для смены окружения (серверов) на лету.
@@ -38,6 +40,7 @@ ReadMe: [[EN](README.md)] | [**RU**]
 - [ ] Конфигурации
 - [ ] Интерактивная инструкция для тестировщиков, при первом запуске
 - [ ] Расширенные примеры
+- [ ] Документация
 
 ## Требования
 - iOS 10.0+
@@ -48,7 +51,7 @@ ReadMe: [[EN](README.md)] | [**RU**]
 ### CocoaPods
 Добавьте следующую строку в ваш Podfile:
 ```rb
-pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwitcher.git'
+pod 'EnvironmentSwitcher'
 ```
 Затем в консоли в папке с вашим проектом выполните команду `pod install`.
 Незабудьте перед использованием добавить `import EnvironmentSwitcher` в файле, где вы собираетесь инициализировать использование библиотеку.

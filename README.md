@@ -1,5 +1,7 @@
 # EnvironmentSwitcher
 
+[![Platforms](https://img.shields.io/cocoapods/p/EnvironmentSwitcher)](https://developer.apple.com/ios/) [![iOS version](https://img.shields.io/badge/ios-10.0-blue)](https://developer.apple.com/ios/) [![Swift version](https://img.shields.io/badge/Swift-5.0-blue.svg?style=flat)](https://developer.apple.com/swift/) [![CocoaPods](https://img.shields.io/cocoapods/v/EnvironmentSwitcher.svg)](https://cocoapods.org/pods/EnvironmentSwitcher) [![License](https://img.shields.io/cocoapods/l/EnvironmentSwitcher?color=blue)](https://raw.githubusercontent.com/AeroAgency/EnvironmentSwitcher/master/LICENSE.md)
+
 ReadMe: [**EN**] | [[RU](README_RU.md)]
 
 **EnvironmentSwitcher** - library for change environments (servers) on the fly.
@@ -39,6 +41,7 @@ This library help solve cases:
 - [ ] Configurability
 - [ ] Interactive instruction for testers on first launch
 - [ ] Extended examples
+- [ ] Documentation
 
 ## Requirements
 - iOS 10.0+
@@ -49,7 +52,7 @@ This library help solve cases:
 ### CocoaPods
 Add the following entry to your Podfile:
 ```rb
-pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwitcher.git'
+pod 'EnvironmentSwitcher'
 ```
 After run `pod install` command in terminal.
 Don't forget to `import EnvironmentSwitcher` in all files, which you planned using this library
