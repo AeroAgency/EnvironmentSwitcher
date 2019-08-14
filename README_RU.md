@@ -36,7 +36,7 @@ ReadMe: [[EN](README.md)] | [**RU**]
 - [x] Поддержка портретной и ландшафтной ориентаций
 - [x] Локализация RU
 - [x] Локализация EN
-- [ ] Сохранение последнего выбранного сервера между запусками
+- [x] Сохранение последнего выбранного сервера между запусками
 - [ ] Конфигурации
 - [ ] Интерактивная инструкция для тестировщиков, при первом запуске
 - [ ] Расширенные примеры
@@ -64,7 +64,7 @@ pod 'EnvironmentSwitcher'
 
 ![](preview_ru.gif)
 
-1. При инициализации указываются список доступных серверов и сервер по умолчанию.
+1. При инициализации указываются список доступных серверов и, опционально сервер по умолчанию (если не указан, то будет самый первый элемент списка).
 2. Библиотека добавляет на основное `UIWindow` невидимую кнопку (центр экрана по горизонтали, небольшой отступ от статус бара вертикали).
 Кнопка не видима, чтобы не закрывать собой контент или title на `NavigationBar`.
 3. Двойной тап по невидимой кнопке показывает кнопку с иконкой в этой же области, которая уже может перекрывать контент.
@@ -107,14 +107,14 @@ extension SomeClass: EnvironmentSwitcherDelegate {
     }
 }
 ```
-Запуск с дефолтным контейнером `UIWindow` и отключённым автостартом при старте приложения:
+Запуск с дефолтным контейнером `UIWindow`, без предпочитаемого сервера и отключённым автостартом:
 ```swift
 class SomeClass {
 
     private(set) var switcher: EnvironmentSwitcher
     
     init() {
-        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], current: "https://stage.com", shouldSelectOnStart: false)
+        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], shouldSelectOnStart: false)
         switcher = EnvironmentSwitcher(config)
         switcher.delegate = self
     }

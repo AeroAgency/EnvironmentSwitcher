@@ -25,7 +25,6 @@ class SettingsView: UIView, XibLoadable {
     }
     //swiftlint:enable strong_iboutlet
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         loadXib()
@@ -36,6 +35,9 @@ class SettingsView: UIView, XibLoadable {
         loadXib()
     }
 
+    func setIsSavingServer(_ isSaving: Bool) {
+        isSaveServerSwitch?.isOn = isSaving
+    }
 }
 
 extension SettingsView {

@@ -27,6 +27,7 @@ class Settings {
         }
     }
     
+    
     dynamic var savedServer: String? {
         set {
             UserDefaults.standard.set(newValue, forKey: SettingsUserDefaultsKeys.lastSelectedServer)

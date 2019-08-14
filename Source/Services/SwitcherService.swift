@@ -14,8 +14,12 @@ protocol SwitcherServiceDelegate: class {
 }
 
 protocol ServersDataSource: class {
+    // servers
     var current: String { get }
-    func serversList() -> [String]
+    var serversList: [String] { get }
+    
+    // settings
+    var isSavingServerAvailable: Bool { get }
 }
 
 protocol PickerServersDelegate: class {
@@ -82,8 +86,13 @@ extension SwitcherService: ServersDataSource {
     var current: String {
         return configurator.currentServer
     }
-    func serversList() -> [String] {
+    
+    var serversList: [String] {
         return configurator.serversList
+    }
+    
+    var isSavingServerAvailable: Bool {
+        return configurator.settings.isServerShouldSave
     }
 }
 
@@ -95,6 +104,7 @@ extension SwitcherService: PickerServersDelegate {
     }
     
     func selectedServer(_ domain: String) {
+        configurator.currentServerUpdate(domain)
         toggleSelectServerVc()
         delegate?.serverSelected(domain)
         
@@ -109,5 +119,9 @@ extension SwitcherService: PickerServersDelegate {
 extension SwitcherService: SettingsViewDelegate {
     func isSaveServerToggled(_ isSaveServer: Bool) {
         configurator.settings.isServerShouldSave = isSaveServer
+        if isSaveServer,
+            configurator.settings.savedServer == nil {
+            configurator.settings.savedServer = current
+        }
     }
 }
