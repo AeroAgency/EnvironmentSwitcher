@@ -12,6 +12,10 @@
 		793EF24822FADCF000FBFE04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 793EF24A22FADCF000FBFE04 /* Localizable.strings */; };
 		793EF24E22FADD0E00FBFE04 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 793EF25022FADD0E00FBFE04 /* Localizable.strings */; };
 		793EF25322FADD5500FBFE04 /* String+i18n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EF25222FADD5500FBFE04 /* String+i18n.swift */; };
+		7942563F22FDA2CC00E3896F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942563E22FDA2CC00E3896F /* SettingsView.swift */; };
+		7942564222FDA42D00E3896F /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7942564422FDA42D00E3896F /* SettingsView.xib */; };
+		7942564A22FDA85C00E3896F /* UIView+XibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942564922FDA85C00E3896F /* UIView+XibLoadable.swift */; };
+		7942564C22FDB15200E3896F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942564B22FDB15200E3896F /* Settings.swift */; };
 		7943A8D722F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8D622F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift */; };
 		7943A8E222F45A0A000E94B1 /* EnvironmentSwitcherExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943A8E122F45A0A000E94B1 /* EnvironmentSwitcherExampleUITests.swift */; };
 		7943A8FB22F45A20000E94B1 /* EnvironmentSwitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7943A8F222F45A20000E94B1 /* EnvironmentSwitcher.framework */; };
@@ -101,6 +105,12 @@
 		793EF24F22FADD0E00FBFE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		793EF25122FADD0F00FBFE04 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		793EF25222FADD5500FBFE04 /* String+i18n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+i18n.swift"; sourceTree = "<group>"; };
+		7942563E22FDA2CC00E3896F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7942564322FDA42D00E3896F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingsView.xib; sourceTree = "<group>"; };
+		7942564622FDA43000E3896F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SettingsView.strings; sourceTree = "<group>"; };
+		7942564822FDA43300E3896F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SettingsView.strings; sourceTree = "<group>"; };
+		7942564922FDA85C00E3896F /* UIView+XibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XibLoadable.swift"; sourceTree = "<group>"; };
+		7942564B22FDB15200E3896F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		7943A8BA22F45A0A000E94B1 /* EnvironmentSwitcherExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvironmentSwitcherExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7943A8D222F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentSwitcherExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7943A8D622F45A0A000E94B1 /* EnvironmentSwitcherExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSwitcherExampleTests.swift; sourceTree = "<group>"; };
@@ -175,6 +185,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7942563D22FDA2A800E3896F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7942563E22FDA2CC00E3896F /* SettingsView.swift */,
+				7942564422FDA42D00E3896F /* SettingsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7943A8AF22F45874000E94B1 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +240,7 @@
 				79ED4C5A22F46A2C00D0E61E /* Helpers */,
 				79ED4C6422F46A2D00D0E61E /* Models */,
 				79ED4C5722F46A2C00D0E61E /* Services */,
+				7942563D22FDA2A800E3896F /* Views */,
 				79ED4C5F22F46A2C00D0E61E /* ViewControllers */,
 				79ED4C5E22F46A2C00D0E61E /* Assets.xcassets */,
 				7943A8F422F45A20000E94B1 /* EnvironmentSwitcher.h */,
@@ -276,6 +296,7 @@
 		79ED4C5A22F46A2C00D0E61E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7942564922FDA85C00E3896F /* UIView+XibLoadable.swift */,
 				79ED4C5B22F46A2C00D0E61E /* UIViewController+fromNib.swift */,
 				79ED4C5C22F46A2C00D0E61E /* UIImage+colored.swift */,
 				793EF25222FADD5500FBFE04 /* String+i18n.swift */,
@@ -299,6 +320,7 @@
 			children = (
 				79ED4C6522F46A2D00D0E61E /* ServersListConfigurator.swift */,
 				79ED4C6622F46A2D00D0E61E /* EnvironmentSwitcher.swift */,
+				7942564B22FDB15200E3896F /* Settings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -511,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ED4C6B22F46A2D00D0E61E /* Assets.xcassets in Resources */,
+				7942564222FDA42D00E3896F /* SettingsView.xib in Resources */,
 				793EF24822FADCF000FBFE04 /* Localizable.strings in Resources */,
 				793EF23722FADBE900FBFE04 /* SwitcherServerSelectController.xib in Resources */,
 				793EF23E22FADBF600FBFE04 /* AppStartRootController.xib in Resources */,
@@ -601,10 +624,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ED4C6E22F46A2D00D0E61E /* AppStartRootController.swift in Sources */,
+				7942564A22FDA85C00E3896F /* UIView+XibLoadable.swift in Sources */,
 				79ED4C6A22F46A2D00D0E61E /* UIImage+colored.swift in Sources */,
 				79ED4C7122F46A2D00D0E61E /* EnvironmentSwitcher.swift in Sources */,
 				79ED4C6822F46A2D00D0E61E /* SwitcherService.swift in Sources */,
 				79ED4C6C22F46A2D00D0E61E /* SwitcherServerSelectController.swift in Sources */,
+				7942564C22FDB15200E3896F /* Settings.swift in Sources */,
+				7942563F22FDA2CC00E3896F /* SettingsView.swift in Sources */,
 				79ED4C6722F46A2D00D0E61E /* SwitcherWindowService.swift in Sources */,
 				79ED4C7022F46A2D00D0E61E /* ServersListConfigurator.swift in Sources */,
 				79ED4C6922F46A2D00D0E61E /* UIViewController+fromNib.swift in Sources */,
@@ -682,6 +708,16 @@
 				793EF25122FADD0F00FBFE04 /* ru */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7942564422FDA42D00E3896F /* SettingsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7942564322FDA42D00E3896F /* Base */,
+				7942564622FDA43000E3896F /* en */,
+				7942564822FDA43300E3896F /* ru */,
+			);
+			name = SettingsView.xib;
 			sourceTree = "<group>";
 		};
 		79ED4C8122F4707E00D0E61E /* LaunchScreen.storyboard */ = {

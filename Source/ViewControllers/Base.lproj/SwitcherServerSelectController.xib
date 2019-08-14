@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwitcherServerSelectController" customModule="EnvironmentSwitcher" customModuleProvider="target">
             <connections>
                 <outlet property="serverPicker" destination="4Sj-vv-4g1" id="0qb-pr-wVR"/>
+                <outlet property="settingsView" destination="imS-We-Gsb" id="Bkj-Wt-BWO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -67,12 +68,24 @@
                         <constraint firstItem="4Sj-vv-4g1" firstAttribute="top" secondItem="9on-IB-MDN" secondAttribute="bottom" id="lni-Xo-Ysf"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imS-We-Gsb" customClass="SettingsView" customModule="EnvironmentSwitcher" customModuleProvider="target">
+                    <rect key="frame" x="16" y="60" width="382" height="526"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="ibDelegate" destination="-1" id="B4r-tJ-PsG"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3011938820422535" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="hVl-Hs-wit" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4An-uR-1mQ"/>
+                <constraint firstItem="hVl-Hs-wit" firstAttribute="top" relation="greaterThanOrEqual" secondItem="imS-We-Gsb" secondAttribute="bottom" constant="16" id="4ot-v5-4wG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hVl-Hs-wit" secondAttribute="bottom" id="5SX-3W-erz"/>
+                <constraint firstItem="imS-We-Gsb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="6Yr-co-hkj"/>
+                <constraint firstItem="hVl-Hs-wit" firstAttribute="top" secondItem="imS-We-Gsb" secondAttribute="bottom" priority="1" constant="16" id="M1c-F4-3hW"/>
+                <constraint firstItem="imS-We-Gsb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aS9-ky-6h4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hVl-Hs-wit" secondAttribute="trailing" id="jBx-ud-PpW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="imS-We-Gsb" secondAttribute="trailing" constant="16" id="u68-qa-bbn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>

@@ -14,14 +14,19 @@ protocol SwitcherServiceDelegate: class {
 }
 
 protocol ServersDataSource: class {
+    // servers
     var current: String { get }
-    func serversList() -> [String]
+    var serversList: [String] { get }
+    
+    // settings
+    var isSavingServerAvailable: Bool { get }
 }
 
 protocol PickerServersDelegate: class {
     func cancelSwitch()
     func selectedServer(_ domain: String)
 }
+
 
 // MARK: - interface
 protocol SwitcherServiceInterface {
@@ -30,6 +35,7 @@ protocol SwitcherServiceInterface {
     func dispaySelectVcOnAppStartIfNeeded()
     func toggleSelectServerVc()
 }
+
 
 // MARK: - service
 class SwitcherService: SwitcherServiceInterface {
@@ -49,7 +55,8 @@ class SwitcherService: SwitcherServiceInterface {
             fatalError("Select server view controller dont found")
         }
         
-        vc.delegate = self
+        vc.pickerDelegate = self
+        vc.settingsDelegate = self
         vc.dataSource = self
         
         dispaySelectVcOnAppStartIfNeeded()
@@ -73,24 +80,48 @@ class SwitcherService: SwitcherServiceInterface {
     }
 }
 
+
 // MARK: - servers list data source
 extension SwitcherService: ServersDataSource {
     var current: String {
         return configurator.currentServer
     }
-    func serversList() -> [String] {
+    
+    var serversList: [String] {
         return configurator.serversList
+    }
+    
+    var isSavingServerAvailable: Bool {
+        return configurator.settings.isServerShouldSave
     }
 }
 
-// MARK: - switcher delegate
+
+// MARK: - picker select server delegate
 extension SwitcherService: PickerServersDelegate {
     func cancelSwitch() {
         toggleSelectServerVc()
     }
     
     func selectedServer(_ domain: String) {
+        configurator.currentServerUpdate(domain)
         toggleSelectServerVc()
         delegate?.serverSelected(domain)
+        
+        if configurator.settings.isServerShouldSave {
+            configurator.settings.savedServer = domain
+        }
+    }
+}
+
+
+// MARK: - settings view delegate
+extension SwitcherService: SettingsViewDelegate {
+    func isSaveServerToggled(_ isSaveServer: Bool) {
+        configurator.settings.isServerShouldSave = isSaveServer
+        if isSaveServer,
+            configurator.settings.savedServer == nil {
+            configurator.settings.savedServer = current
+        }
     }
 }
