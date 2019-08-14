@@ -1,5 +1,7 @@
 # EnvironmentSwitcher
 
+[![Platforms](https://img.shields.io/cocoapods/p/EnvironmentSwitcher)](https://developer.apple.com/ios/) [![iOS version](https://img.shields.io/badge/ios-10.0-blue)](https://developer.apple.com/ios/) [![Swift version](https://img.shields.io/badge/Swift-5.0-blue.svg?style=flat)](https://developer.apple.com/swift/) [![CocoaPods](https://img.shields.io/cocoapods/v/EnvironmentSwitcher.svg)](https://cocoapods.org/pods/EnvironmentSwitcher) [![License](https://img.shields.io/cocoapods/l/EnvironmentSwitcher?color=blue)](https://raw.githubusercontent.com/AeroAgency/EnvironmentSwitcher/master/LICENSE.md)
+
 ReadMe: [**EN**] | [[RU](README_RU.md)]
 
 **EnvironmentSwitcher** - library for change environments (servers) on the fly.
@@ -35,10 +37,11 @@ This library help solve cases:
 - [x] Portrait and landscape orientations support
 - [x] Localization RU
 - [x] Localization EN
-- [ ] Saving last selected environment between app launches
+- [x] Saving last selected environment between app launches
 - [ ] Configurability
 - [ ] Interactive instruction for testers on first launch
 - [ ] Extended examples
+- [ ] Documentation
 
 ## Requirements
 - iOS 10.0+
@@ -49,7 +52,7 @@ This library help solve cases:
 ### CocoaPods
 Add the following entry to your Podfile:
 ```rb
-pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwitcher.git'
+pod 'EnvironmentSwitcher'
 ```
 After run `pod install` command in terminal.
 Don't forget to `import EnvironmentSwitcher` in all files, which you planned using this library
@@ -62,7 +65,7 @@ Unzip and drag `Source` folder to your project.
 
 ![](preview.gif)
 
-1. On init sets a list of available servers and default server.
+1. On init sets a list of available servers and, optionally default server (if didn`t set, default server will first element from available servers list).
 2. Library add invisible button  to main `UIWindow` (horizontal center of screen and small indent from status bar by vertical).
 Button is visible to dont overlap screen content or title on `NavigationBar`.
 3. Double tap on this invisible button, showing button with icon in this area. This button can overlap content.
@@ -106,14 +109,14 @@ extension SomeClass: EnvironmentSwitcherDelegate {
     }
 }
 ```
-Run with default `UIWindow` container and disabled autostart on app launch:
+Run with default `UIWindow` container, without preferred server and disabled autostart:
 ```swift
 class SomeClass {
 
     private(set) var switcher: EnvironmentSwitcher
     
     init() {
-        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], current: "https://stage.com", shouldSelectOnStart: false)
+        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], shouldSelectOnStart: false)
         switcher = EnvironmentSwitcher(config)
         switcher.delegate = self
     }

@@ -121,4 +121,25 @@ class EnvironmentSwitcherExampleUITests: XCTestCase {
         XCTAssertFalse(image.exists)
         XCTAssertTrue(app.pickers.count == 1)
     }
+    
+    func testSettingsExists() {
+        let app = XCUIApplication()
+        
+        let switchElem = app.switches.matching(identifier: "saveSwitch").firstMatch
+        XCTAssertTrue(switchElem.exists)
+        XCTAssertTrue(switchElem.isEnabled)
+    }
+    
+    func testSettingsChecked() {
+        let app = XCUIApplication()
+        
+        let switchElem = app.switches.matching(identifier: "saveSwitch").firstMatch
+        let defaultValue = switchElem.value as? String
+        
+        XCTAssertTrue(defaultValue == "1")
+        switchElem.tap()
+        let changedValue = switchElem.value as? String
+        
+        XCTAssertTrue(changedValue == "0")
+    }
 }

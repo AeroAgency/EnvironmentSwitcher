@@ -1,5 +1,7 @@
 # EnvironmentSwitcher
 
+[![Platforms](https://img.shields.io/cocoapods/p/EnvironmentSwitcher)](https://developer.apple.com/ios/) [![iOS version](https://img.shields.io/badge/ios-10.0-blue)](https://developer.apple.com/ios/) [![Swift version](https://img.shields.io/badge/Swift-5.0-blue.svg?style=flat)](https://developer.apple.com/swift/) [![CocoaPods](https://img.shields.io/cocoapods/v/EnvironmentSwitcher.svg)](https://cocoapods.org/pods/EnvironmentSwitcher) [![License](https://img.shields.io/cocoapods/l/EnvironmentSwitcher?color=blue)](https://raw.githubusercontent.com/AeroAgency/EnvironmentSwitcher/master/LICENSE.md)
+
 ReadMe: [[EN](README.md)] | [**RU**]
 
 **EnvironmentSwitcher** - утилита предназначенная для смены окружения (серверов) на лету.
@@ -34,10 +36,11 @@ ReadMe: [[EN](README.md)] | [**RU**]
 - [x] Поддержка портретной и ландшафтной ориентаций
 - [x] Локализация RU
 - [x] Локализация EN
-- [ ] Сохранение последнего выбранного сервера между запусками
+- [x] Сохранение последнего выбранного сервера между запусками
 - [ ] Конфигурации
 - [ ] Интерактивная инструкция для тестировщиков, при первом запуске
 - [ ] Расширенные примеры
+- [ ] Документация
 
 ## Требования
 - iOS 10.0+
@@ -48,7 +51,7 @@ ReadMe: [[EN](README.md)] | [**RU**]
 ### CocoaPods
 Добавьте следующую строку в ваш Podfile:
 ```rb
-pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwitcher.git'
+pod 'EnvironmentSwitcher'
 ```
 Затем в консоли в папке с вашим проектом выполните команду `pod install`.
 Незабудьте перед использованием добавить `import EnvironmentSwitcher` в файле, где вы собираетесь инициализировать использование библиотеку.
@@ -61,7 +64,7 @@ pod 'EnvironmentSwitcher', :git => 'https://github.com/AeroAgency/EnvironmentSwi
 
 ![](preview_ru.gif)
 
-1. При инициализации указываются список доступных серверов и сервер по умолчанию.
+1. При инициализации указываются список доступных серверов и, опционально сервер по умолчанию (если не указан, то будет самый первый элемент списка).
 2. Библиотека добавляет на основное `UIWindow` невидимую кнопку (центр экрана по горизонтали, небольшой отступ от статус бара вертикали).
 Кнопка не видима, чтобы не закрывать собой контент или title на `NavigationBar`.
 3. Двойной тап по невидимой кнопке показывает кнопку с иконкой в этой же области, которая уже может перекрывать контент.
@@ -104,14 +107,14 @@ extension SomeClass: EnvironmentSwitcherDelegate {
     }
 }
 ```
-Запуск с дефолтным контейнером `UIWindow` и отключённым автостартом при старте приложения:
+Запуск с дефолтным контейнером `UIWindow`, без предпочитаемого сервера и отключённым автостартом:
 ```swift
 class SomeClass {
 
     private(set) var switcher: EnvironmentSwitcher
     
     init() {
-        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], current: "https://stage.com", shouldSelectOnStart: false)
+        let config = ServersListConfigurator(servers: ["https://production.com", "https://stage.com", "https://develop.com"], shouldSelectOnStart: false)
         switcher = EnvironmentSwitcher(config)
         switcher.delegate = self
     }

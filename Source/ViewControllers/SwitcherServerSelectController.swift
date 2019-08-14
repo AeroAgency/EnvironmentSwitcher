@@ -12,33 +12,41 @@ import UIKit
 class SwitcherServerSelectController: UIViewController {
     
     @IBOutlet private var serverPicker: UIPickerView?
+    @IBOutlet private var settingsView: SettingsView?
     
-    weak var delegate: PickerServersDelegate?
+    weak var settingsDelegate: SettingsViewDelegate?
+    weak var pickerDelegate: PickerServersDelegate?
     weak var dataSource: ServersDataSource? {
         didSet {
             serverPicker?.reloadAllComponents()
             selectCurrentServer()
+            updateSettingsView()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         selectCurrentServer()
+        updateSettingsView()
     }
     
     private func selectCurrentServer() {
         guard let source = dataSource,
-            let index = source.serversList().firstIndex(of: source.current) else {
+            let index = source.serversList.firstIndex(of: source.current) else {
                 return
         }
-        self.serverPicker?.selectRow(index, inComponent: 0, animated: true)
+        serverPicker?.selectRow(index, inComponent: 0, animated: true)
+    }
+    
+    private func updateSettingsView() {
+        settingsView?.setIsSavingServer(dataSource?.isSavingServerAvailable ?? false)
     }
 }
 
 // MARK: - IBActions
 private extension SwitcherServerSelectController {
     @IBAction private func tapCancelButton() {
-        delegate?.cancelSwitch()
+        pickerDelegate?.cancelSwitch()
     }
     
     @IBAction private func tapDoneButton() {
@@ -52,7 +60,7 @@ private extension SwitcherServerSelectController {
             return
         }
         
-        delegate?.selectedServer(serverDomain)
+        pickerDelegate?.selectedServer(serverDomain)
     }
 }
 
@@ -63,7 +71,7 @@ extension SwitcherServerSelectController: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return dataSource?.serversList().count ?? 0
+        return dataSource?.serversList.count ?? 0
     }
     
 }
@@ -72,11 +80,18 @@ extension SwitcherServerSelectController: UIPickerViewDataSource {
 extension SwitcherServerSelectController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        guard let list = dataSource?.serversList() else {
+        guard let list = dataSource?.serversList else {
             return "-"
         }
         
         return list[row]
         
+    }
+}
+
+// MARK: - settigns view delegate
+extension SwitcherServerSelectController: SettingsViewDelegate {
+    func isSaveServerToggled(_ isSaveServer: Bool) {
+        settingsDelegate?.isSaveServerToggled(isSaveServer)
     }
 }
