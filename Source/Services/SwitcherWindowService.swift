@@ -13,7 +13,7 @@ private enum SwitcherIconRects {
     private static let size = 48
     
     private static let yPosition: Int = {
-        let margin = 4
+        let margin = 8
         if #available(iOS 11.0, *) {
             guard let vc = SwitcherWindowService.shared().environmentSwitcherWindow.rootViewController as? SwitcherServerSelectController else {
                 return margin
@@ -62,6 +62,7 @@ class SwitcherWindowService {
     private var application = UIApplication.shared as MainWindowContaner
     private var mainWindowRootVc: UIViewController?
     private var checkSubviewsFrontTimer: Timer?
+    private var xMargin: CGFloat = 1
     
     // MARK: lazy vars
     private lazy var mainWindow: UIWindow = {
@@ -110,9 +111,10 @@ class SwitcherWindowService {
         checkSubviewsFrontTimer = nil
     }
     
-    static func shared(_ app: MainWindowContaner? = nil) -> SwitcherWindowService {
+    static func shared(_ app: MainWindowContaner? = nil, xCoeff: CGFloat = 1) -> SwitcherWindowService {
         if let appInstance = app {
             shared.attachToApp(appInstance)
+            shared.xMargin = xCoeff
         }
         return shared
     }
@@ -183,7 +185,7 @@ class SwitcherWindowService {
     
     private func iconFrame() -> CGRect {
         #if DEBUG
-        print("vertical margin: \(SwitcherIconRects.Margins.verticalX)")
+//        print("vertical margin: \(SwitcherIconRects.Margins.verticalX)")
 //        print("horizontal margin: \(SwitcherIconRects.Margins.horizontalX)")
 //        print("-----")
         #endif
@@ -192,6 +194,11 @@ class SwitcherWindowService {
         if UIDevice.current.orientation.isLandscape {
             position = SwitcherIconRects.vertical
         }
+        
+        if xMargin != 1 {
+            position.origin.x *= xMargin
+        }
+        
         return position
     }
     

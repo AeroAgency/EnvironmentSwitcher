@@ -34,6 +34,9 @@ public class EnvironmentSwitcher {
     }
     
     private var service: SwitcherServiceInterface
+    public dynamic var currentServer: String {
+        return service.currentServer
+    }
     
     /// Say observers, when server was changed
     public weak var delegate: EnvironmentSwitcherDelegate?
@@ -44,7 +47,7 @@ public class EnvironmentSwitcher {
     ///     - config: Configuration object with servers list and current server.
     ///     - app: Container of main app UIWindow. Default is UIApplications.shared.
     public init(_ config: ServersListConfigurator, app: MainWindowContaner = UIApplication.shared as MainWindowContaner) {
-        service = SwitcherService(config: config, service: SwitcherWindowService.shared(app))
+        service = SwitcherService(config: config, service: SwitcherWindowService.shared(app, xCoeff: config.xCoefficient))
         service.delegate = self
     }
 }

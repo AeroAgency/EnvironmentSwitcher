@@ -30,6 +30,7 @@ protocol PickerServersDelegate: class {
 
 // MARK: - interface
 protocol SwitcherServiceInterface {
+    var currentServer: String { get }
     var delegate: SwitcherServiceDelegate? { get set }
     
     func dispaySelectVcOnAppStartIfNeeded()
@@ -43,6 +44,10 @@ class SwitcherService: SwitcherServiceInterface {
     weak var delegate: SwitcherServiceDelegate?
     private var configurator: ServersListConfigurator
     private var windowService: SwitcherWindowService
+    
+    var currentServer: String {
+        return current
+    }
         
     // MARK: - life cicle
     init(config: ServersListConfigurator, service: SwitcherWindowService) {

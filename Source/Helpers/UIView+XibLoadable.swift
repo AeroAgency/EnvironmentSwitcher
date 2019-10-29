@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 protocol XibLoadable: UIView {
     func loadXib()
 }
